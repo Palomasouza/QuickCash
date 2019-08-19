@@ -12,14 +12,34 @@
   document.getElementById("fechar-menu").addEventListener("click", openMenu);
   document.getElementById("menu-item").addEventListener("click", closeMenu);
   document.getElementById("menu-item1").addEventListener("click", closeMenu);
-  document.getElementById("menu-item2").addEventListener("click", closeMenu);
-
-  document.getElementById("box-product--Cash").addEventListener("click", showCashToCash);
-  document.getElementById("box-product--Card").addEventListener("click", showCashToCard);
-  document.getElementById("box-product--Account").addEventListener("click", showCashToAccount);
-
+  document.getElementById("menu-item2").addEventListener("click", closeMenu);  
   document.getElementById("btnForm").addEventListener("click", openForm);
   document.getElementById("close-form").addEventListener("click", closeForm);
+
+  // 	Menu
+  function openMenu() {
+    menuOpen.classList.toggle("--menuOpen");
+    menuMobile.classList.toggle("--menuMobile");
+    fecharMenu.classList.toggle("--menuClose");
+    menuItem.forEach(element => {
+      element.classList.add("--openItem");
+    });
+  }
+  function closeMenu() {
+    menuOpen.classList.remove("--isOpen");
+  }
+
+  //  Form
+  function openForm() {
+    formOpen.classList.toggle("--isOpen");
+    console.log('oi chegou')
+  }
+  function closeForm() {
+    formClose.classList.remove("--isOpen");
+  }
+
+
+  
 
   // Products
   function showCashToCash() {
@@ -90,42 +110,8 @@
       cashToAccount.style.display = "none";
     }
   }
-  // Products
 
-  // 	Menu
 
-  function openMenu() {
-    menuOpen.classList.toggle("--menuOpen");
-    menuMobile.classList.toggle("--menuMobile");
-    fecharMenu.classList.toggle("--menuClose");
-    menuItem.forEach(element => {
-      element.classList.add("--openItem");
-    });
-  }
 
-  function closeMenu() {
-    menuOpen.classList.remove("--isOpen");
-  }
 
-  //  Form
-  function openForm() {
-    formOpen.classList.toggle("--isOpen");
-  }
-
-  function closeForm() {
-    formClose.classList.remove("--isOpen");
-  }
-
-  //   function openProducts() {
-  //     console.log("oioioi");
-  //     boxProducts.classList.toggle("-show");
-  //     boxProducts1.classList.toggle("-show");
-  //     boxProducts2.classList.toggle("-show");
-  //   }
-
-  //   function closeProduct() {
-  //     boxProducts.classList.remove("-show");
-  //     boxProducts1.classList.remove("-show");
-  //     boxProducts2.classList.remove("-show");
-  //   }
 })();
