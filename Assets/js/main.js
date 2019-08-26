@@ -25,9 +25,9 @@
       element.classList.add("--openItem");
     });
   }
-  // function closeMenu() {
-  //   menuOpen.classList.remove("--menuOpen");
-  // }
+  function closeMenu() {
+    menuOpen.classList.remove("--isOpen");
+  }
 
   //  Form
   function openForm() {
