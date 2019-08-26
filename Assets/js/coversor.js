@@ -45,8 +45,8 @@ function inversefxexchangerate(){
       	var c=oc.value;var e=oe.value;
       	var d=$$("fxexchangerateAmount").value;if(!IsNum(d)){return false}
       	var ct = oc.options[oc.selectedIndex].text;
-      	// var et = oe.options[oe.selectedIndex].text;
-      	// result=d*fxrates[e]/fxrates[c];result =result.toFixed(4);$$("fxspanfm").innerHTML=$$("fxexchangerateFrom").options[$$("fxexchangerateFrom").selectedIndex].value;$$("fxexchangerateResult").innerHTML=result;}
+      	var et = oe.options[oe.selectedIndex].text;
+      	result=d*fxrates[e]/fxrates[c];result =result.toFixed(4);$$("fxspanfm").innerHTML=$$("fxexchangerateFrom").options[$$("fxexchangerateFrom").selectedIndex].value;$$("fxexchangerateResult").innerHTML=result;}
         var form_content ='<div>
         <input value="1" type="text" id="fxexchangerateAmount"  style="margin-top:10px; width:75%; padding: 7px 8px;display: inline-block;border: 1px solid #ccc;box-shadow: inset 0 1px 3px #ddd;border-radius: 4px;vertical-align: middle;-webkit-box-sizing: border-box;-moz-box-sizing:border-box;box-sizing: border-box;" onkeyup="getfxexchangerate(); return false;"/>
         <span  id="fxspanfm" style="padding-left:5px;font-weight:bold;color:#2D6AB4; position:relative; top:5px;">USD</span> 

@@ -5,9 +5,7 @@
   var menuMobile = document.querySelector(".menu-mobile");
   var fecharMenu = document.querySelector(".fechar-menu");
 
-  var formOpen = document.getElementById("div-form");
-  var formClose = document.getElementById("div-form");
-
+  
   document.getElementById("menu-mobile").addEventListener("click", openMenu);
   document.getElementById("fechar-menu").addEventListener("click", openMenu);
   document.getElementById("menu-item").addEventListener("click", closeMenu);
@@ -15,7 +13,9 @@
   document.getElementById("menu-item2").addEventListener("click", closeMenu);  
   document.getElementById("btnForm").addEventListener("click", openForm);
   document.getElementById("close-form").addEventListener("click", closeForm);
-
+  
+  var formOpen = document.getElementById("div-form");
+  var formClose = document.getElementById("div-form");
   // 	Menu
   function openMenu() {
     menuOpen.classList.toggle("--menuOpen");
@@ -25,9 +25,9 @@
       element.classList.add("--openItem");
     });
   }
-  function closeMenu() {
-    menuOpen.classList.remove("--isOpen");
-  }
+  // function closeMenu() {
+  //   menuOpen.classList.remove("--menuOpen");
+  // }
 
   //  Form
   function openForm() {

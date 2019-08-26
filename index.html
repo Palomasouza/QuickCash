@@ -124,25 +124,25 @@
       <div class="container-select">
         <fieldset class="wrapper-simulater">
           <label class="label-simulater">From:</label>
-            <select class="select-simulater" id="fxexchangerateTo" onchange="getfxexchangerate(); return false;">
-              <option value="ivony">Ivory Coast</option>
-              <option value="burkina">Burkina Faso</option>
-              <option value="mali">Mali</option>
-              <option value="niger">Niger</option>
-              <option value="togo" selected="selected">Togo</option>
+            <select class="select-simulater" id="fxexchangerateFrom" onchange="getfxexchangerate(); return false;">
+              <option value="BRL">Ivory Coast</option>
+              <option value="EUR">Burkina Faso</option>
+              <option value="NGN">Mali</option>
+              <option value="NGN">Niger</option>
+              <option value="USD" selected="selected">Togo</option>
               <option value="france">France</option>
             </select>
         </fieldset>
         <span class="simulater-inverse" onclick="inversefxexchangerate()">&#8645;</span>
         <fieldset class="wrapper-simulater">
           <label class="label-simulater">To:</label>
-            <select class="select-simulater" id="fxexchangerateFrom" onchange="getfxexchangerate(); return false;">
+            <select class="select-simulater" id="fxexchangerateTo" onchange="getfxexchangerate(); return false;">
               <option value="ivony" selected="selected">Ivory Coast</option>
-              <option value="burkina">Burkina Faso</option>
-              <option value="mali">Mali</option>
+              <option value="BRL">Burkina Faso</option>
+              <option value="EUR">Mali</option>
               <option value="NGN">Niger</option>
-              <option value="togo">Togo</option>
-              <option value="france">France</option>
+              <option value="NGN">Togo</option>
+              <option value="USD">France</option>
             </select>
         </fieldset>
       </div>
@@ -157,8 +157,8 @@
         <fieldset class="simulater-converter">
           <label class="converter-title">They receive</label>
           <span class="converter-items">
-            <p class="items-text" id="fxexchangerateResult">FCFA</p>
-            <p class="converter-items-input" placeholder="0" id="fxexchangerateResult">1</p>
+            <p class="items-text">FCFA</p>
+            <p class="converter-items-input" id="fxexchangerateResult">1</p>
           </span>
         </fieldset>
         <span class="container-simulater--description">
@@ -208,12 +208,14 @@
 					<figure><img src="./Assets/img/noun_Arrow_2427329 (1).svg" onclick="plusDivs(1)"></figure>
 					<figure><img src="./Assets/img/noun_Arrow_2427329.svg" onclick="plusDivs(-1)"></figure>
 				</div>
+				<div class="circle-slide1"></div>
 			</div>
 		</div>
 		<div class="box-writing">
 			<p class="writing">
 				Writing a new page in the history of money transfer along with you!
 			</p>
+			<div class="circle-slide2"></div>
 		</div>
 	</section>
 	<div class="circles">
@@ -376,33 +378,48 @@
 		<div class="wrapper-footer">
 			<div id="Contacts" class="box-grand-circle">
 				<div class="grand-circle">
-					<img class="img-grand-circle" src="./Assets/img/circulos-vermelhos.png" alt="">
+					<img class="img-grand-circle" src="./Assets/img/detalhe_footer_grande.svg" alt="">
 				</div>
 			</div>
 			<div class="container-footer">
 				<div class="box-footer-center">
 					<div class="box-footer">
 						<div class="text-footer">
-							<div>
-								<img src="./Assets/img/logo-footer.png" class="img-logo-footer" a
+							<figure>
+								<img src="./Assets/img/new logo - QC Branca.svg" class="img-logo-footer" a
 									href="../css/style.css"></a>
-							</div>
-							<div class="info-footer">
+							</figure>
+							<ul class="list-contact">
+								<li class="contact-item">
+									<img src="./Assets/img/baseline-location_on-24px.svg" class="info-footer-img" alt="">
+								<p class="p-info-footer">Plateau Tour BIAO, 13th Floor - 01 BP 10804 Abidjan 01</p>
+								</li>
+								<li class="contact-item">
+									<img src="./Assets/img/baseline-phone-24px (1).svg" class="info-footer-img" alt="">
+								<p class="p-info-footer">Tel : (225) 20 32 25 35</p>
+								</li>
+								<li class="contact-item">
+									<img src="./Assets/img/baseline-email-24px.svg" class="info-footer-img" alt="">
+								<p class="p-info-footer">Email : infos@quickcashci.com</p>
+								</li>
+							</ul>
+
+							<!-- <div class="info-footer">
 								<img src="./Assets/img/baseline-location_on-24px.svg" class="info-footer-img" alt="">
 								<p class="p-info-footer">Plateau Tour BIAO, 13th Floor - 01 BP 10804 Abidjan 01</p>
-							</div>
-							<div class="info-footer">
+							</div> -->
+							<!-- <div class="info-footer">
 								<img src="./Assets/img/baseline-phone-24px (1).svg" class="info-footer-img" alt="">
 								<p class="p-info-footer">Tel : (225) 20 32 25 35</p>
-							</div>
-							<div class="info-footer">
+							</div> -->
+							<!-- <div class="info-footer">
 								<img src="./Assets/img/baseline-email-24px.svg" class="info-footer-img" alt="">
 								<p class="p-info-footer">Email : infos@quickcashci.com</p>
-							</div>
+							</div> -->
 						</div>
-						<div class="box-copyright">
+						<div class="box-copyright-desktop">
 							<p class="copyright">Copyright © 2019 QuickCash - All Rights Reserved </p>
-							<p class="p-copyright">Developed by Vai na WEb</p>
+							<!-- <p class="p-copyright">Developed by Vai na WEb</p> -->
 						</div>
 					</div>
 				</div>
@@ -411,22 +428,26 @@
 						<a href="./Assets/pages/about.html">
 							<li class="item-menu-footer">About us</li>
 						</a>
-						<a href="./Assets/pages/tml">
+						<a href="./Assets/pages/products.html">
 							<li class="item-menu-footer">Our Products</li>
 						</a>
-						<a href="#news">
-							<li class="item-menu-footer">News</li>
+						<a href="#news" class="menu-footer-news">
+							<li class="item-menu-footer menu-footer-news">News</li>
 						</a>
 						<a href="#Contacts">
 							<li class="item-menu-footer">Contact</li>
 						</a>
 					</ul>
-					<img class="img-circle-whith" src="./Assets/img/circulos-brancos.png" alt="">
+					<img class="img-circle-whith" src="./Assets/img/detalhe_footer_pequeno.svg" alt="">
 				</nav>
+				<div class="box-copyright-mobile">
+					<p class="copyright">Copyright © 2019 QuickCash - All Rights Reserved </p>
+					<!-- <p class="p-copyright">Developed by Vai na WEb</p> -->
+				</div>
 			</div>
 		</div>
 		<div class="footer-author">
-			<p>Developed by</p>
+			<p class="author-text">Developed by</p>
 			<img src="./Assets/img/VnW-Logo.svg" alt="logo Vai na Web" class="logo-vnw">
 		</div>
 	</footer>
@@ -449,9 +470,61 @@
 		  x[slideIndex-1].style.display = "flex";  
 		}
 
+	//	--------------  //
+
+	var fxrates=new Array();
+fxrates["BRL"]=3.7926;
+fxrates["EUR"]=0.898497;
+fxrates["NGN"]=360;
+fxrates["USD"]=1
+;
+
+function inversefxexchangerate(){
+  var first = document.getElementById('fxexchangerateFrom');
+  var firstoptions = first.options;
+  var firsthtml = first.innerHTML;
+  var second = document.getElementById('fxexchangerateTo');
+  var secondoptions = second.options;
+  var secondhtml = second.innerHTML;
+  var firstvalue = first.options[first.selectedIndex].value;
+  var secondvalue = second.options[second.selectedIndex].value; 
+  first.innerHTML = secondhtml;second.innerHTML = firsthtml;
+    for (i=0; i<firstoptions.length; i++) {
+      if (firstoptions[i].value == secondvalue) {
+        firstoptions[i].selected = true; 
+      }
+   }
+    for (i=0; i<secondoptions.length; i++){ 
+      if (secondoptions[i].value == firstvalue) {
+        secondoptions[i].selected = true;      
+      }
+    }
+    
+    getfxexchangerate();
+  
+  }
+	    function IsNum(a){
+	    	if(a!=null&&a!=""){
+	    		return !isNaN(a)
+	    	}
+	    }function $$(a){
+	    	if(typeof a=="string"){
+	    		return document.getElementById(a)
+	    	}
+	    }
+
+      function getfxexchangerate(){
+      	var oc = $$("fxexchangerateFrom");
+      	var oe = $$("fxexchangerateTo");
+      	var c=oc.value;var e=oe.value;
+      	var d=$$("fxexchangerateAmount").value;if(!IsNum(d)){return false}
+      	var ct = oc.options[oc.selectedIndex].text;
+      	var et = oe.options[oe.selectedIndex].text;
+      	result=d*fxrates[e]/fxrates[c];result =result.toFixed(4);$$("fxspanfm").innerHTML=$$("fxexchangerateFrom").options[$$("fxexchangerateFrom").selectedIndex].value;$$("fxexchangerateResult").innerHTML=result;}
+
 	</script>
 	<script src="./Assets/js/main.js"></script>	
-	<script src="./Assets/js/coversor.js"></script>
+	<!-- <script src="./Assets/js/coversor.js"></script> -->
 	<script src="./Assets/js/dom-i18n.min.js"></script>
   <script>
     domI18n({
