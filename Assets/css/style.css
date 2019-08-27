@@ -114,7 +114,7 @@ body {
 .menu-list {
   min-width: 40vw;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   list-style: none;
 }
@@ -131,6 +131,7 @@ body {
     width: 100%;
     height: 100%;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     background-color: #fff;
     z-index: 2;
@@ -140,6 +141,7 @@ body {
   display: none;
 }
 .menu-item {
+  height: 10%;
   color: rgba(238, 51, 37, 1);
   font-size: 1rem;
   font-weight: 700;
@@ -218,6 +220,7 @@ body {
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
 }
+
 @media (max-width: 768px) {
   .title-principal {
     position: relative;
@@ -227,6 +230,17 @@ body {
     font-size: 2rem;
   }
 }
+
+@media (max-width: 425px) {
+  .title-principal {
+    position: relative;
+    top: 75px;
+    left: -59px;
+    width: 80%;
+    font-size: 2rem;
+  }
+}
+
 .div-button {
   width: 95%;
   display: flex;
@@ -476,7 +490,7 @@ body {
 }
 @media (max-width: 768px) {
   .p-cash {
-    width: 30%;
+    width: 40%;
     font-size: .9rem;
   }
 }
@@ -744,7 +758,6 @@ simulater-fig {
 @media (max-width: 768px) {
   .box-slide {
     width: 100%;
-    height: 75vh;
     align-items: flex-start;
   }
 }
@@ -778,6 +791,7 @@ simulater-fig {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 3;
 }
 @media (max-width: 768px) {
   .seta-desktop {
@@ -789,6 +803,7 @@ simulater-fig {
 }
 @media (max-width: 768px) {
   .seta-mobile {
+    padding-bottom: 3rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -1179,7 +1194,7 @@ input:checked ~ .slide-box-2 {
 
 @media (max-width: 768px) {
   .box-txt-social {
-    width: 90%;
+    padding: 0;
   }
 }
 
@@ -1216,9 +1231,9 @@ input:checked ~ .slide-box-2 {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #f8f8f8;
+  background-color: #FBFDFF;
+  box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px;
   border-radius: 29px;
-  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 1024px) {
@@ -1257,6 +1272,12 @@ input:checked ~ .slide-box-2 {
   align-items: center;
 }
 
+  @media(max-width: 768px) {
+    .social-figure {
+      padding: 0;
+    }
+  }
+
 .img-impact {
   width: 100%;
 }
@@ -1264,7 +1285,6 @@ input:checked ~ .slide-box-2 {
 @media (max-width: 768px) {
   .img-impact {
     width: 80vw !important;
-    padding-top: 1.5rem;
     padding-left: 0;
   }
 }
@@ -1287,7 +1307,7 @@ input:checked ~ .slide-box-2 {
 }
 @media (max-width: 768px) {
   .title-socialimpact {
-    padding: 2rem 0;
+    padding: 1rem 0;
   }
 }
 
@@ -1454,7 +1474,7 @@ input:checked ~ .slide-box-2 {
 }
 
 .img-part {
-  height: 60px;
+  height: 63px;
 }
 
   @media (max-width: 525px) {
@@ -1603,6 +1623,18 @@ input:checked ~ .slide-box-2 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.list-contact {
+  height: 45%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
 }
 
   @media(max-width: 1024px) {
@@ -1808,6 +1840,10 @@ input:checked ~ .slide-box-2 {
   .footer-author {
     height: 10%;
   }
+}
+
+.author-text {
+  font-family: "Montserrat", sans-serif;
 }
 
 @media(max-width: 768px) {

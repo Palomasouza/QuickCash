@@ -22,13 +22,13 @@
       </div>
       <nav class="menu">
         <p id="menu-mobile" class="menu-mobile">menu</p>
-        <img src="./Assets/img/baseline-close-24px.svg" alt="" id="fechar-menu" class="fechar-menu" />
+        <img src="../img/baseline-close-24px.svg" alt="" id="fechar-menu" class="fechar-menu" />
         <ul class="menu-list">
-          <a href="../pages/about.html" class="menu-item" id="menu-item">
-            <li>About us</li>
+          <a href="../../index.html" class="menu-item" id="menu-item">
+            <li>Home</li>
           </a>
-          <a href="../pages/products.html" class="menu-item" id="menu-item1">
-            <li>Our Products</li>
+          <a href="../pages/about.html" class="menu-item" id="menu-item1">
+            <li>About us</li>
           </a>
           <a href="#Contacts" class="menu-item" id="menu-item2">
             <li>Contacts</li>
@@ -237,126 +237,229 @@
       </div>
     </div>
   </section>
-  <section id="container-products-simulater">
-    <div class="products-simulater">
-      <figure><img class="img-simulater" src="../img/contador.png"></figure>
-    </div>
-    <div class="products-firstbox-simulater">
-      <h2 class="title-simulater">Simulate your transfer</h2>
-      <h3 class="subtitle-simulater">QuickCash is currently available in these countries:</p>
-        <div class="box-country">
-          <div class="box-simulater">
-            <img src="../img/Costa-do-marfim.png" class="country-flag" alt="Ivory Coast">
-            <p class="country-name">Ivory Coast</p>
-          </div>
-          <div class="box-simulater">
-            <img src="../img/BurkinaFaso.png" class="country-flag" alt="Burkina Faso">
-            <p class="country-name">Burkina Faso</p>
-          </div>
-          <div class="box-simulater">
-            <img src="../img/mali.png" class="country-flag" alt="Mali">
-            <p class="country-name">Mali</p>
-          </div>
-          <div class="box-simulater">
-            <img src="../img/Niger.png" class="country-flag" alt="Niger">
-            <p class="country-name">Niger</p>
-          </div>
-          <div class="box-simulater">
-            <img src="../img/Togo.png" class="country-flag" alt="Togo">
-            <p class="country-name">Togo</p>
-          </div>
-        </div>
-    </div>
+  <section id="simulater">      
+    <form action="" class="container-simulater">
+      <div class="container-select">
+        <fieldset class="wrapper-simulater">
+          <label class="label-simulater">From:</label>
+            <select class="select-simulater" id="fxexchangerateFrom" onchange="getfxexchangerate(); return false;">
+              <option value="BRL">Ivory Coast</option>
+              <option value="EUR">Burkina Faso</option>
+              <option value="NGN">Mali</option>
+              <option value="NGN">Niger</option>
+              <option value="USD" selected="selected">Togo</option>
+              <option value="france">France</option>
+            </select>
+        </fieldset>
+        <span class="simulater-inverse" onclick="inversefxexchangerate()">&#8645;</span>
+        <fieldset class="wrapper-simulater">
+          <label class="label-simulater">To:</label>
+            <select class="select-simulater" id="fxexchangerateTo" onchange="getfxexchangerate(); return false;">
+              <option value="ivony" selected="selected">Ivory Coast</option>
+              <option value="BRL">Burkina Faso</option>
+              <option value="EUR">Mali</option>
+              <option value="NGN">Niger</option>
+              <option value="NGN">Togo</option>
+              <option value="USD">France</option>
+            </select>
+        </fieldset>
+      </div>
+      <div class="container-simulater--converter">
+        <fieldset class="simulater-converter">
+          <label class="converter-title">Your send</label>
+          <span class="converter-items">
+            <p class="items-text" id="fxspanfm">EUR</p>
+            <input class="converter-items-input" placeholder="0" value="1" type="text" id="fxexchangerateAmount" onkeyup="getfxexchangerate(); return false;"></input>
+          </span>
+        </fieldset>
+        <fieldset class="simulater-converter">
+          <label class="converter-title">They receive</label>
+          <span class="converter-items">
+            <p class="items-text">FCFA</p>
+            <p class="converter-items-input" id="fxexchangerateResult">1</p>
+          </span>
+        </fieldset>
+        <span class="container-simulater--description">
+          <p class="simulater-description description-rate">Today's rate: €1 = 655.96 FCFA</p>
+          <p class="simulater-description"> €2.00 fee</p>
+        </span>
+      </div>
+    </form>
+    <div class="firstbox-simulater">
+			<div class="box-titulo">
+				<h2 class="title-simulater">Simulate your transfer</h2>
+				<h3 class="subtitle-simulater">QuickCash is currently available in these countries:</h3>
+			</div>
+			<ul class="box-country">
+				<li class="country-name"><img src="../img/Costa-do-marfim.png" class="country-flag" alt="country-flag">
+					Ivory Coast</li>
+				<li class="country-name"><img src="../img/BurkinaFaso.png" class="country-flag" alt="country-flag">Burkina Faso</li>
+				<li class="country-name"><img src="../img/mali.png" class="country-flag" alt="country-flag">Mali</li>
+				<li class="country-name"><img src="../img/Niger.png" class="country-flag" alt="">Niger</li>
+				<li class="country-name">	<img src="../img/Togo.png" class="country-flag" alt="country-flag">Togo</li>
+			</ul>
+	  </div>	
   </section>
   <div class="circles"></div>
   <section id="container-agency">
-    <img class="icon-agency" src="../img/globo.svg" alt="Globo">
-    <h2 class="title-agency-p">Find an agency near you!</h2>
-    <form class="form-agency">
-      <label class="label-agency" for="country">Country</label>
-      <select id="country" name="country" placeholder="country">
-        <option value="country">Country</option>
-        <option value="France">France</option>
-        <option value="Italy">Italy</option>
-        <option value="Japan">Japan</option>
-        <option value="Mexico">Mexico</option>
-        <option value="Portugal">Portugal</option>
-        <option value="Spain">Spain</option>
-        <option value="United States">United States</option>
-        <option value="Brazil">Brazil</option>
-      </select>
-      <label class="label-agency" for="state">State</label>
-      <select name="state" id="state" placeholder="State">
-        <option value="state">State</option>
-        <option value="state">State</option>
-        <option value="state">State</option>
-      </select>
-      <label class="label-agency" for="city">City</label>
-      <select name="city" id="city" placeholder="City">
-        <option value="city">City</option>
-        <option value="city">City</option>
-        <option value="city">City</option>
-      </select>
-      <div class="button-agency">
-        <a href="#">SEARCH</a>
+    <div class="wrapper-agency">
+      <img class="icon-agency" src="../img/globo.svg" alt="">
+      <span class="span-agency">
+        <h2 class="title-agency">Find an agency near you!</h2>
+      </span>
+  
+      <form class="form-agency">
+        <label class="label-agency" for="country">Country</label>
+        <select id="country" name="country" placeholder="country">
+          <option value="country">Country</option>
+          <option value="France">France</option>
+          <option value="Italy">Italy</option>
+          <option value="Japan">Japan</option>
+          <option value="Mexico">Mexico</option>
+          <option value="Portugal">Portugal</option>
+          <option value="Spain">Spain</option>
+          <option value="United States">United States</option>
+          <option value="Brazil">Brazil</option>
+        </select>
+        <label class="label-agency" for="state">State</label>
+        <select name="state" id="state" placeholder="State">
+          <option value="state">State</option>
+          <option value="state">State</option>
+          <option value="state">State</option>
+        </select>
+  
+        <label class="label-agency" for="city">City</label>
+        <select name="city" id="city" placeholder="City">
+          <option value="city">City</option>
+          <option value="city">City</option>
+          <option value="city">City</option>
+        </select>
+        <div class="button-agency">
+          <a href="">SEARCH</a>
+        </div>
+      </form>
+      <div class="box-iframe">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2809.0734737332987!2d-4.018849485614924!3d5.320302194964438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1ebb8250843ed%3A0x75f3967c3b06f8e8!2sBIAO+Bank!5e0!3m2!1spt-BR!2sbr!4v1566227777975!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0" allowfullscreen class="iframe-map"></iframe>
+        <p class="location">Plateau Tour BIAO, 13th Floor - 01 BP 10804 Abidjan 01</p>
       </div>
-    </form>
-    <div class="box-iframe">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.6204060644495!2d-4.0194005857360375!3d5.321757537442205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1ebb8250843ed%3A0x75f3967c3b06f8e8!2sBIAO+Bank!5e0!3m2!1spt-BR!2sbr!4v1558305091227!5m2!1spt-BR!2sbr"
-        width="600" height="450" frameborder="0" style="border:0" allowfullscreen class="iframe-map"></iframe>
-      <p class="location">Plateau Tour BIAO, 13th Floor - 01 BP 10804 Abidjan 01</p>
     </div>
   </section>
   <footer id="footer">
-    <div id="Contacts" class="box-grand-circle">
-      <div class="grand-circle">
-        <img class="img-grand-circle" src="../img/circulos-vermelhos.png" alt="Circles">
+    <div class="wrapper-footer">
+      <div id="Contacts" class="box-grand-circle">
+        <div class="grand-circle">
+          <img class="img-grand-circle" src="../img/detalhe_footer_grande.svg" alt="">
+        </div>
+      </div>
+      <div class="container-footer">
+        <div class="box-footer-center">
+          <div class="box-footer">
+            <div class="text-footer">
+              <figure>
+                <img src="../img/new logo - QC Branca.svg" class="img-logo-footer" a
+                  href="../css/style.css"></a>
+              </figure>
+              <ul class="list-contact">
+                <li class="contact-item">
+                  <img src="../img/baseline-location_on-24px.svg" class="info-footer-img" alt="">
+                <p class="p-info-footer">Plateau Tour BIAO, 13th Floor - 01 BP 10804 Abidjan 01</p>
+                </li>
+                <li class="contact-item">
+                  <img src="../img/baseline-phone-24px (1).svg" class="info-footer-img" alt="">
+                <p class="p-info-footer">Tel : (225) 20 32 25 35</p>
+                </li>
+                <li class="contact-item">
+                  <img src="../img/baseline-email-24px.svg" class="info-footer-img" alt="">
+                <p class="p-info-footer">Email : infos@quickcashci.com</p>
+                </li>
+              </ul>
+            </div>
+            <div class="box-copyright-desktop">
+              <p class="copyright">Copyright © 2019 QuickCash - All Rights Reserved </p>
+            </div>
+          </div>
+        </div>
+        <nav class="menu-secundario">
+          <ul class="list-menu-secundario">
+            <a href="../pages/about.html">
+              <li class="item-menu-footer">About us</li>
+            </a>
+            <a href="../pages/products.html">
+              <li class="item-menu-footer">Our Products</li>
+            </a>
+            <a href="#news" class="menu-footer-news">
+              <li class="item-menu-footer menu-footer-news">News</li>
+            </a>
+            <a href="#Contacts">
+              <li class="item-menu-footer">Contact</li>
+            </a>
+          </ul>
+          <img class="img-circle-whith" src="../img/detalhe_footer_pequeno.svg" alt="">
+        </nav>
+        <div class="box-copyright-mobile">
+          <p class="copyright">Copyright © 2019 QuickCash - All Rights Reserved </p>
+        </div>
       </div>
     </div>
-    <div id="Contacts" class="container-footer">
-      <div class="box-footer">
-        <div class="text-footer">
-          <figure class="logo-footer">
-            <img src="../img/logo-footer.png" class="img-logo-footer">
-					</figure>
-          <div class="info-footer">
-            <img src="../img/baseline-location_on-24px.svg" class="info-footer-img" alt="Location">
-            <p class="p-info-footer">Plateau Tour BIAO, 13th Floor - 01 BP 10804 Abidjan 01</p>
-          </div>
-          <div class="info-footer">
-            <img src="../img/baseline-phone-24px (1).svg" class="info-footer-img" alt="Phone">
-            <p class="p-info-footer">Tel: (225) 20 32 25 35</p>
-          </div>
-          <div class="info-footer">
-            <img src="../img/baseline-email-24px.svg" class="info-footer-img" alt="Email">
-            <p class="p-info-footer">Email: infos@quickcashci.com</p>
-          </div>
-        </div>
-        <div class="box-copyright">
-          <p class="copyright">Copyright © 2019 QuickCash - All Rights Reserved </p>
-          <p class="p-copyright">Developed by Vai na WEb</p>
-        </div>
-      </div>
-      <nav class="menu-secundario">
-        <ul class="list-menu-secundario">
-          <a href="./about.html">
-            <li class="item-menu-footer">About us</li>
-          </a>
-          <a href="#OurProducts">
-            <li class="item-menu-footer">Our Products</li>
-          </a>
-          <a href="./index.html#news">
-            <li class="item-menu-footer">News</li>
-          </a>
-          <a href="#Contacts">
-            <li class="item-menu-footer">Contact</li>
-          </a>
-        </ul>
-        <img class="img-circle-whith" src="../img/circulos-brancos.png" alt="Circles">
-      </nav>
+    <div class="footer-author">
+      <p class="author-text">Developed by</p>
+      <img src="../img/VnW-Logo.svg" alt="logo Vai na Web" class="logo-vnw">
     </div>
   </footer>
+  <script>
+    var fxrates=new Array();
+    fxrates["BRL"]=3.7926;
+    fxrates["EUR"]=0.898497;
+    fxrates["NGN"]=360;
+    fxrates["USD"]=1
+  ;
+
+  function inversefxexchangerate(){
+    var first = document.getElementById('fxexchangerateFrom');
+    var firstoptions = first.options;
+    var firsthtml = first.innerHTML;
+    var second = document.getElementById('fxexchangerateTo');
+    var secondoptions = second.options;
+    var secondhtml = second.innerHTML;
+    var firstvalue = first.options[first.selectedIndex].value;
+    var secondvalue = second.options[second.selectedIndex].value; 
+    first.innerHTML = secondhtml;second.innerHTML = firsthtml;
+      for (i=0; i<firstoptions.length; i++) {
+        if (firstoptions[i].value == secondvalue) {
+          firstoptions[i].selected = true; 
+        }
+    }
+      for (i=0; i<secondoptions.length; i++){ 
+        if (secondoptions[i].value == firstvalue) {
+          secondoptions[i].selected = true;      
+        }
+      }
+      
+      getfxexchangerate();
+    
+    }
+    function IsNum(a){
+      if(a!=null&&a!=""){
+        return !isNaN(a)
+      }
+    }function $$(a){
+      if(typeof a=="string"){
+        return document.getElementById(a)
+      }
+    }
+
+    function getfxexchangerate(){
+      var oc = $$("fxexchangerateFrom");
+      var oe = $$("fxexchangerateTo");
+      var c=oc.value;var e=oe.value;
+      var d=$$("fxexchangerateAmount").value;if(!IsNum(d)){return false}
+      var ct = oc.options[oc.selectedIndex].text;
+      var et = oe.options[oe.selectedIndex].text;
+      result=d*fxrates[e]/fxrates[c];result =result.toFixed(4);$$("fxspanfm").innerHTML=$$("fxexchangerateFrom").options[$$("fxexchangerateFrom").selectedIndex].value;$$("fxexchangerateResult").innerHTML=result;
+    }
+
+  </script>
+  <script src="../js/products.js"></script>
   <script src="../js/main.js"></script>
 </body>
 
