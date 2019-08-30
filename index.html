@@ -25,18 +25,21 @@
 				<img src="./Assets/img/baseline-close-24px.svg" alt="" id="fechar-menu" class="fechar-menu">
 				<ul class="menu-list">
 					<a href="./Assets/pages/about.html" class="menu-item" id="menu-item">
-						<li>About us</li>
+						<li class="menu-item">About us</li>
 					</a>
 					<a href="./Assets/pages/products.html" class="menu-item" id="menu-item1">
-						<li>Our Products</li>
+						<li class="menu-item">Our Products</li>
 					</a>
 					<a href="#Contacts" class="menu-item" id="menu-item2">
 						<li>Contacts</li>
 					</a>
 				</ul>
 				<ul class="box-lang">
+						<a class="item-lang" href="./Assets/pages/frances.html">
+							<li class="ingles-en">EN</li>
+						</a>
 					<a class="item-lang" href="./Assets/pages/frances.html">
-						<li>FR</li>
+						<li class="ingles-fr"> /FR</li>
 					</a>
 				</ul>
 			</nav>
@@ -45,7 +48,7 @@
 			</nav>
 		</section>
 	</header>
-	<main>
+	<main id="main">
 		<section class="home">
 			<div class="wrapper-home">
 				<div class="box-title">
@@ -99,9 +102,9 @@
 			<div class="container-box-cash">
 
 			<div class="box-cash">
-				<h2 class="title-cash" data-translatable>Cash to Cash // Cash à Cash</h2>
+				<h2 class="title-cash" data-translatable>Cash to Cash</h2>
 				<img class="img-cash" src="./Assets/img/cash.png" alt="">
-				<p class="p-cash">Transfer of money from one individual to another</p>
+				<p class="p-cash">Classic money transfer from a persan or physical to another physical persan</p>
 			</div>
 			<div class="box-cash">
 				<h2 class="title-cash">Cash to Card</h1>
@@ -111,8 +114,7 @@
 			<div class="box-cash">
 				<h2 class="title-cash">Cash to Account</h1>
 				<img class="img-cash" src="./Assets/img/account.png" alt="">
-				<p class="p-cash">Transfer of money from an individual to a bank account
-				</p>
+				<p class="p-cash">Designed for migrants, it allows to transfer money directly into a bank account original, from the OUICKCASH network.</p>
 			</div>
 		</div>
 	</section>
@@ -175,7 +177,7 @@
 				<li class="country-name"><img src="./Assets/img/BurkinaFaso.png" class="country-flag" alt="country-flag">Burkina Faso</li>
 				<li class="country-name"><img src="./Assets/img/mali.png" class="country-flag" alt="country-flag">Mali</li>
 				<li class="country-name"><img src="./Assets/img/Niger.png" class="country-flag" alt="">Niger</li>
-				<li class="country-name">	<img src="./Assets/img/Togo.png" class="country-flag" alt="country-flag">Togo</li>
+				<li class="country-name">	<img src="./Assets/img/Flag_of_Togo.svg" class="country-flag-togo" alt="country-flag">Togo</li>
 			</ul>
 	</div>	
 </section>
@@ -184,20 +186,37 @@
 			<div class="slide">
 				<figure class="seta-desktop"><img src="./Assets/img/noun_Arrow_2427329 (1).svg" onclick="plusDivs(1)">
 				</figure>
+				<!-- <div for="slide" class="frame-slide1"></div>
+				<div for="slide" class="frame-slide2"></div> -->
 				<div for="slide" class="slide-box">
 					<figure class="slide-figure">
-						<img class="img-slide" src="./Assets/img/depoimento1.png" alt="">
+						<!-- <img class="img-slide" src="./Assets/img/depoimento1.png" alt=""> -->
+						<img src="./Assets/img/Marie.jpg" alt="Marie-picture" class="img-slide">
 					</figure>
+					<span class="box-depoiment">
+						<p class="depoiment-text">Living far from his family is not easy as a man and it is my duty to fulfil my family needs. With Quickcash, I do not worry anymore, because sending money to my family has never been so easy for as much as the transactions fees are very affordable.</p>	
+						<h3>ISSA</h3>
+					</span>
 				</div>
 				<div for="slide" class="slide-box">
 					<figure class="slide-figure">
-						<img class="img-slide" src="./Assets/img/depoimento2.png" alt="">
+						<!-- <img class="img-slide" src="./Assets/img/depoimento2.png" alt=""> -->
+						<img src="./Assets/img/Eliane.jpg" alt="" class="img-slide">
 					</figure>
+					<span class="box-depoiment">
+						<p class="depoiment-text">I heard about Quickcash from a friend of mine who used to transfer money through it, then I decided to give it a try. Until now, I do not use any other money transfer company anymore because of the agencies which are very easy to access</p>
+						<h3> ELIANE</h3>
+					</span>
 				</div>
 				<div for="slide" class="slide-box">
 					<figure class="slide-figure">
-						<img class="img-slide" src="./Assets/img/depoimento3.png" alt="">
+						<!-- <img class="img-slide" src="./Assets/img/depoimento3.png" alt=""> -->
+						<img src="./Assets/img/Emmanuel testimony.jpg" alt="" class="img-slide">
 					</figure>
+					<span class="box-depoiment">
+						<p class="depoiment-text">As I arrived Côte D’Ivoire, I had to face an issue. I had lost my luggage with all my credit cards and stuff. With QuickCash network, I was able to receive money from France and, fortunately, a few days later someone contacted me to give back my luggage undamaged</p>
+						<h3>EMMANUEL</h3>
+					</span>
 				</div>
 				<figure class="seta-desktop"><img src="./Assets/img/noun_Arrow_2427329.svg" onclick="plusDivs(-1)">
 				</figure>
@@ -271,25 +290,25 @@
 					<div class="social-impact">
 						<div class="box-img-social">
 							<figure class="social-figure">
-								<img class="img-impact" src="./Assets/img/forum-mondiale.png" alt="">
+								<img class="img-impact" src="./Assets/img/forum_mondiale1.jpg" alt="">
 							</figure>
 							<div class="box-txt-social">
-								<h3 class="title-socialimpact" data-translatable>Quickcash au forum mondiale des droits de l’homme au Maroc // Quickcash au forum mondiale des droits de l’homme au maroc</h3>
-								<p class="p-socialimpact" data-translatable>Après le Brésil s’est déroulée au Maroc du 27 au 30 Novembre 2014, la deuxième édition du Forum mondial des droits de l’Homme. Ce Forum a rassemblé pendant 4 jours plus de 8.000 participants sur divers thématiques concernant les Droits de l’Homme. // Après le Brésil s’est déroulée au Maroc du 27 au 30 Novembre 2014, la deuxième édition du Forum mondial des droits de l’Homme. Ce Forum a rassemblé pendant 4 jours plus de 8.000 participants sur divers thématiques concernant les Droits de l’Homme.</p>
+								<h3 class="title-socialimpact" data-translatable>Quickcash au forum mondiale des droits de l’homme au Maroc</h3>
+								<p class="p-socialimpact" data-translatable>Après le Brésil s’est déroulée au Maroc du 27 au 30 Novembre 2014, la deuxième édition du Forum mondial des droits de l’Homme. Ce Forum a rassemblé pendant 4 jours plus de 8.000 participants sur divers thématiques concernant les Droits de l’Homme.</p>
 							</div>
 						</div>
 						<div class="box-img-social reverse">
 							<figure class="social-figure">
-								<img class="img-impact" src="./Assets/img/atelier-secteur-agricole.png" alt="">
+								<img class="img-impact" src="./Assets/img/Atelier secteur agricole.png" alt="">
 							</figure>
 							<div class="box-txt-social">
-								<h3 class="title-socialimpact" data-translatable>Quickcash participe à un atelier sur le thème : "Le secteur agricole face aux enjeux du changement climatique" // Le secteur agricole face aux enjeux du changement climatique</h3>
-								<p class="p-socialimpact" data-translatable>Le 21 Novembre 2014, à l’initiative de la CGECI (Confédération Générale des Entreprises de Côte d’Ivoire) et l’UNEMAF (L’Union des Entreprises Agricoles et Forestières) s’est tenue à la Maison de l’Entreprise, sise au plateau, un atelier d’information et de sensibilisation des acteurs du secteur agricole. Les thèmes abordés étaient relatifs à l’impact des changements climatiques sur l’agriculture et les stratégies d’adaptation et d’atténuation de leurs effets. // Le 21 Novembre 2014, à l’initiative de la CGECI (Confédération Générale des Entreprises de Côte d’Ivoire) et l’UNEMAF (L’Union des Entreprises Agricoles et Forestières) s’est tenue à la Maison de l’Entreprise, sise au plateau, un atelier d’information et de sensibilisation des acteurs du secteur agricole. Les thèmes abordés étaient relatifs à l’impact des changements climatiques sur l’agriculture et les stratégies d’adaptation et d’atténuation de leurs effets. La présence de QUICKCASH à cet atelier se justifiait par le fait que la majorité de sa clientèle est constituée d’agriculteurs. Nous avons donc tenu à mettre l’information à la disposition de nos clients.</p>
+								<h3 class="title-socialimpact" data-translatable>Quickcash participe à un atelier sur le thème : "Le secteur agricole face aux enjeux du changement climatique"</h3>
+								<p class="p-socialimpact" data-translatable>Le 21 Novembre 2014, à l’initiative de la CGECI (Confédération Générale des Entreprises de Côte d’Ivoire) et l’UNEMAF (L’Union des Entreprises Agricoles et Forestières) s’est tenue à la Maison de l’Entreprise, sise au plateau, un atelier d’information et de sensibilisation des acteurs du secteur agricole. Les thèmes abordés étaient relatifs à l’impact des changements climatiques sur l’agriculture et les stratégies d’adaptation et d’atténuation de leurs effets. </p>
 							</div>
 						</div>
 					<div class="box-img-social">
 						<figure class="social-figure">
-							<img class="img-impact" src="./Assets/img/forum-mondiale.png" alt="">
+							<img class="img-impact" src="./Assets/img/Forum_RSE_Lille.jpg" alt="">
 						</figure>
 						<div class="box-txt-social">
 							<h3 class="title-socialimpact">QuickCash au forum de Lille sur la RSE</h3>
@@ -348,13 +367,19 @@
 	<section id="partners">
 		<div class="div-part">
 			<div class="box-part">
-				<h2 class="title-partners">Banking Partners</h2>
+				<h2 class="title-partners">Strategic partner </h2>
 				<div class="list-part">
+					<img src="./Assets/img/Logo_APG.png" class="img-part" alt="">
 					<img src="./Assets/img/logo_ASUSU_SA.png" class="img-part" alt="">
 					<img src="./Assets/img/Logo_BPEC_(banque populaire).jpg" class="img-part" alt="">
 					<img src="./Assets/img/Logo_Bank_of_africa_logo.png" class="img-part" alt="">
+					<img src="./Assets/img/Logo_KATARI_SARL.jpeg" class="img-part" alt="">
 					<img src="./Assets/img/Logo_Sonapost_Burkina_Faso.png" class="img-part" alt="">
+					<img src="./Assets/img/Logo_shakaexpress.png" class="img-part" alt="">
 					<img src="./Assets/img/Logo_CNCE.jpg" class="img-part" alt="">
+					<img src="./Assets/img/logo_TIMBUKTU_XECHANGE.png" class="img-part" alt="">
+					<img src="./Assets/img/logo_TRANSFAST.png" class="img-part" alt="">
+					<img src="./Assets/img/logo_WORLREMIT.png" class="img-part" alt="">
 				</div>
 			</div>
 			<div class="box-part">
@@ -366,6 +391,9 @@
 					<img src="./Assets/img/Logo_stanford-university.png" class="img-part" alt="">
 					<img src="./Assets/img/camec.png" class="img-part" alt="">
 					<img src="./Assets/img/chamber-trust.png" class="img-part" alt="">
+					<img src="./Assets/img/Logo_CGECI.png" class="img-part" alt="">
+					<img src="./Assets/img/Logo_Exxonmobil.png" class="img-part" alt="">
+					<img src="./Assets/img/Logo_Plan.jpg" class="img-part" alt="">
 				</div>
 			</div>
 		</div>
@@ -389,11 +417,11 @@
 							<ul class="list-contact">
 								<li class="contact-item">
 									<img src="./Assets/img/baseline-location_on-24px.svg" class="info-footer-img" alt="">
-								<p class="p-info-footer">Plateau Tour BIAO, 13th Floor - 01 BP 10804 Abidjan 01</p>
+								<p class="p-info-footer">Star 14, Angre 9e Tranche, Abidjan, Côte D’Ivoire</p>
 								</li>
 								<li class="contact-item">
 									<img src="./Assets/img/baseline-phone-24px (1).svg" class="info-footer-img" alt="">
-								<p class="p-info-footer">Tel : (225) 20 32 25 35</p>
+								<p class="p-info-footer">Tel : (+225) 22 50 45 72 </p>
 								</li>
 								<li class="contact-item">
 									<img src="./Assets/img/baseline-email-24px.svg" class="info-footer-img" alt="">
@@ -428,10 +456,12 @@
 				</div>
 			</div>
 		</div>
-		<div class="footer-author">
-			<p class="author-text">Developed by</p>
-			<img src="./Assets/img/VnW-Logo.svg" alt="logo Vai na Web" class="logo-vnw">
-		</div>
+		<a href="https://www.vainaweb.com.br" class="footer-author">
+			<div class="footer-author">
+				<p class="author-text">Developed by</p>
+				<img src="./Assets/img/VnW-Logo.svg" alt="logo Vai na Web" class="logo-vnw">
+			</div>
+		</a>
 	</footer>
 	<script>
 		let slideIndex = 1;

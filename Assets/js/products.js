@@ -11,10 +11,10 @@
     let cashToAccount = document.getElementById("OurProducts-Inside-3");
     let btnCloseCash = document.getElementById('btn-cash');
 
-    let openCash;
+    let openCash =true;
 
-    if (!openCash) {
-      openCash = true;
+    if (openCash = true) {
+      // openCash = false;
       cashToCash.style.display = "flex";
       cashToCard.style.display = "none";
       cashToAccount.style.display = "none";
