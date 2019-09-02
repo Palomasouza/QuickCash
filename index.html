@@ -5,8 +5,7 @@
 	<title>QuickCash</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="./Assets/css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,600|Montserrat:500,600,700|Muli:300"
-		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:300,400,500,600,700|Montserrat:300,400,500,600,700|Muli:300,400,600,700&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="keywords" content="">
 	<meta http-equiv="content-language" content="en-US, fr" />
@@ -56,29 +55,29 @@
 				</div>
 				
 				<div id="div-form">  
-					<form class="container-form">
+					<form class="container-form" action="https://formspree.io/email@domain.tld" method="POST">
 						<div class="title-form">
 							<h2 class="contact-form">Contact us </h2>
-							<button id="close-form">-</button>
+							<button id="close-form" value="reset"type="reset">-</button>
 						</div>
 						<div class="div-box-form">
 					    	<div class="box-form-contact">
 									<label class="box-form">Name
 									</label>
-									<input type="name" class="input-form" name="Name">
+									<input type="text" name="name" class="input-form">
 						    </div>
 								<div class="box-form-contact">
 									<label class="box-form">E-mail
 									</label>
-									<input type="email" class="input-form" name="E-mail">	
+									<input type="email" class="input-form" name="e-mail">	
 								</div>
 								<div class="box-form-contact">
 									<label class="box-form">How can we help you?</label>
-									<textarea class="textarea-form-2" name="How can we help you?"></textarea>
+									<textarea class="textarea-form-2" name="message"></textarea>
 								</div>
 					    </div>
 					    <div class="div-button-cancel-send">
-								<button class="button-cancel">Cancel</button>
+								<button class="button-cancel" id="button-cancel" value="reset"type="reset" >Cancel</button>
 							<button class="button-send">Send</button>
 					  </div>
 				  </form>
@@ -93,150 +92,150 @@
 		</div>
 		</section>
 	<section id="container-products">
-		
-		<div id="OurProducts" class="container-title-cash">
-			<h2 class="title-ourproducts">
-				Our products
-			</h2>
-		</div>
-			<div class="container-box-cash">
-
-			<div class="box-cash">
-				<h2 class="title-cash" data-translatable>Cash to Cash</h2>
-				<img class="img-cash" src="./Assets/img/cash.png" alt="">
-				<p class="p-cash">Classic money transfer from a persan or physical to another physical persan</p>
+		<div class="wrapper-content">
+			<div id="OurProducts" class="container-title-cash">
+				<h2 class="title-ourproducts">
+					Our products
+				</h2>
 			</div>
-			<div class="box-cash">
-				<h2 class="title-cash">Cash to Card</h1>
-				<img class="img-cash" src="./Assets/img/card.png" alt="">
-				<p class="p-cash">Transfer of money from an individual onto a card</p>
-			</div>
-			<div class="box-cash">
-				<h2 class="title-cash">Cash to Account</h1>
-				<img class="img-cash" src="./Assets/img/account.png" alt="">
-				<p class="p-cash">Designed for migrants, it allows to transfer money directly into a bank account original, from the OUICKCASH network.</p>
+				<div class="container-box-cash">
+	
+				<div class="box-cash">
+					<h2 class="title-cash" data-translatable>Cash to Cash</h2>
+					<img class="img-cash" src="./Assets/img/cash.png" alt="">
+					<p class="p-cash">Classic money transfer from a persan or physical to another physical persan</p>
+				</div>
+				<div class="box-cash">
+					<h2 class="title-cash">Cash to Card</h1>
+					<img class="img-cash" src="./Assets/img/card.png" alt="">
+					<p class="p-cash">Transfer of money from an individual onto a card</p>
+				</div>
+				<div class="box-cash">
+					<h2 class="title-cash">Cash to Account</h1>
+					<img class="img-cash" src="./Assets/img/account.png" alt="">
+					<p class="p-cash">Designed for migrants, it allows to transfer money directly into a bank account original, from the OUICKCASH network.</p>
+				</div>
 			</div>
 		</div>
 	</section>
-	<section id="simulater">      
-    <form action="" class="container-simulater">
-      <div class="container-select">
-        <fieldset class="wrapper-simulater">
-          <label class="label-simulater">From:</label>
-            <select class="select-simulater" id="fxexchangerateFrom" onchange="getfxexchangerate(); return false;">
-              <option value="BRL">Ivory Coast</option>
-              <option value="EUR">Burkina Faso</option>
-              <option value="NGN">Mali</option>
-              <option value="NGN">Niger</option>
-              <option value="USD" selected="selected">Togo</option>
-              <option value="france">France</option>
-            </select>
-        </fieldset>
-        <span class="simulater-inverse" onclick="inversefxexchangerate()">&#8645;</span>
-        <fieldset class="wrapper-simulater">
-          <label class="label-simulater">To:</label>
-            <select class="select-simulater" id="fxexchangerateTo" onchange="getfxexchangerate(); return false;">
-              <option value="ivony" selected="selected">Ivory Coast</option>
-              <option value="BRL">Burkina Faso</option>
-              <option value="EUR">Mali</option>
-              <option value="NGN">Niger</option>
-              <option value="NGN">Togo</option>
-              <option value="USD">France</option>
-            </select>
-        </fieldset>
-      </div>
-      <div class="container-simulater--converter">
-        <fieldset class="simulater-converter">
-          <label class="converter-title">Your send</label>
-          <span class="converter-items">
-            <p class="items-text" id="fxspanfm">EUR</p>
-            <input class="converter-items-input" placeholder="0" value="1" type="text" id="fxexchangerateAmount" onkeyup="getfxexchangerate(); return false;"></input>
-          </span>
-        </fieldset>
-        <fieldset class="simulater-converter">
-          <label class="converter-title">They receive</label>
-          <span class="converter-items">
-            <p class="items-text">FCFA</p>
-            <p class="converter-items-input" id="fxexchangerateResult">1</p>
-          </span>
-        </fieldset>
-        <span class="container-simulater--description">
-          <p class="simulater-description description-rate">Today's rate: €1 = 655.96 FCFA</p>
-          <p class="simulater-description"> €2.00 fee</p>
-        </span>
-      </div>
-    </form>
-    <div class="firstbox-simulater">
-			<div class="box-titulo">
-				<h2 class="title-simulater">Simulate your transfer</h2>
-				<h3 class="subtitle-simulater">QuickCash is currently available in these countries:</h3>
-			</div>
-			<ul class="box-country">
-				<li class="country-name"><img src="./Assets/img/Costa-do-marfim.png" class="country-flag" alt="country-flag">
-					Ivory Coast</li>
-				<li class="country-name"><img src="./Assets/img/BurkinaFaso.png" class="country-flag" alt="country-flag">Burkina Faso</li>
-				<li class="country-name"><img src="./Assets/img/mali.png" class="country-flag" alt="country-flag">Mali</li>
-				<li class="country-name"><img src="./Assets/img/Niger.png" class="country-flag" alt="">Niger</li>
-				<li class="country-name">	<img src="./Assets/img/Flag_of_Togo.svg" class="country-flag-togo" alt="country-flag">Togo</li>
-			</ul>
-	</div>	
-</section>
+	<section id="simulater">  
+		<div class="wrapper-simulater">
+				<form action="" class="container-simulater">
+					<div class="container-select">
+						<fieldset class="box-simulater">
+							<label class="label-simulater">From:</label>
+								<select class="select-simulater" id="fxexchangerateFrom" onchange="getfxexchangerate(); return false;">
+									<option value="BRL">Ivory Coast</option>
+									<option value="EUR">Burkina Faso</option>
+									<option value="NGN">Mali</option>
+									<option value="NGN">Niger</option>
+									<option value="USD" selected="selected">Togo</option>
+									<option value="france">France</option>
+								</select>
+						</fieldset>
+						<span class="simulater-inverse" onclick="inversefxexchangerate()">&#8645;</span>
+						<fieldset class="box-simulater">
+							<label class="label-simulater">To:</label>
+								<select class="select-simulater" id="fxexchangerateTo" onchange="getfxexchangerate(); return false;">
+									<option value="ivony" selected="selected">Ivory Coast</option>
+									<option value="BRL">Burkina Faso</option>
+									<option value="EUR">Mali</option>
+									<option value="NGN">Niger</option>
+									<option value="NGN">Togo</option>
+									<option value="USD">France</option>
+								</select>
+						</fieldset>
+					</div>
+					<div class="container-simulater--converter">
+						<fieldset class="simulater-converter">
+							<label class="converter-title">Your send</label>
+							<span class="converter-items">
+								<p class="items-text" id="fxspanfm">EUR</p>
+								<input class="converter-items-input" placeholder="0" value="1" type="text" id="fxexchangerateAmount" onkeyup="getfxexchangerate(); return false;"></input>
+							</span>
+						</fieldset>
+						<fieldset class="simulater-converter">
+							<label class="converter-title">They receive</label>
+							<span class="converter-items">
+								<p class="items-text">FCFA</p>
+								<p class="converter-items-input" id="fxexchangerateResult">1</p>
+							</span>
+						</fieldset>
+						<span class="container-simulater--description">
+							<p class="simulater-description description-rate">Today's rate: €1 = 655.96 FCFA</p>
+							<p class="simulater-description"> €2.00 fee</p>
+						</span>
+					</div>
+				</form>
+				<div class="firstbox-simulater">
+					<div class="box-titulo">
+						<h2 class="title-simulater">Simulate your transfer</h2>
+						<h3 class="subtitle-simulater">QuickCash is currently available in these countries:</h3>
+					</div>
+					<ul class="box-country">
+						<li class="country-name"><img src="./Assets/img/Flag_Ivory_Coast.svg" class="country-flag" alt="country-flag">
+							Ivory Coast</li>
+						<li class="country-name"><img src="./Assets/img/Flag_of_Burkina_Faso.svg" class="country-flag" alt="country-flag">Burkina Faso</li>
+						<li class="country-name"><img src="./Assets/img/Flag_of_Mali.svg" class="country-flag" alt="country-flag">Mali</li>
+						<li class="country-name"><img src="./Assets/img/Flag_of_Niger.svg" class="country-flag" alt="">Niger</li>
+						<li class="country-name">	<img src="./Assets/img/Flag_of_Togo.svg" class="country-flag-togo" alt="country-flag">Togo</li>
+					</ul>
+			</div>	
+		</div>
+	</section>
 	<section id="s-slide">
-		<div class="box-slide">
-			<div class="slide">
-				<figure class="seta-desktop"><img src="./Assets/img/noun_Arrow_2427329 (1).svg" onclick="plusDivs(1)">
-				</figure>
-				<!-- <div for="slide" class="frame-slide1"></div>
-				<div for="slide" class="frame-slide2"></div> -->
-				<div for="slide" class="slide-box">
-					<figure class="slide-figure">
-						<!-- <img class="img-slide" src="./Assets/img/depoimento1.png" alt=""> -->
-						<img src="./Assets/img/Marie.jpg" alt="Marie-picture" class="img-slide">
+		<div class="wrapper-simulater">
+			<div class="box-slide">
+				<div class="slide">
+					<figure class="seta-desktop"><img src="./Assets/img/noun_Arrow_2427329 (1).svg" onclick="plusDivs(1)">
 					</figure>
-					<span class="box-depoiment">
-						<p class="depoiment-text">Living far from his family is not easy as a man and it is my duty to fulfil my family needs. With Quickcash, I do not worry anymore, because sending money to my family has never been so easy for as much as the transactions fees are very affordable.</p>	
-						<h3>ISSA</h3>
-					</span>
-				</div>
-				<div for="slide" class="slide-box">
-					<figure class="slide-figure">
-						<!-- <img class="img-slide" src="./Assets/img/depoimento2.png" alt=""> -->
-						<img src="./Assets/img/Eliane.jpg" alt="" class="img-slide">
+					<!-- <div for="slide" class="frame-slide1"></div>
+					<div for="slide" class="frame-slide2"></div> -->
+					<div for="slide" class="slide-box">
+						<figure class="slide-figure">
+							<!-- <img class="img-slide" src="./Assets/img/depoimento1.png" alt=""> -->
+							<img src="./Assets/img/Marie.jpg" alt="Marie-picture" class="img-slide">
+						</figure>
+						<span class="box-depoiment">
+							<p class="depoiment-text">Living far from his family is not easy as a man and it is my duty to fulfil my family needs. With Quickcash, I do not worry anymore, because sending money to my family has never been so easy for as much as the transactions fees are very affordable.</p>	
+							<h3 class="depoiment-title">ISSA</h3>
+						</span>
+					</div>
+					<div for="slide" class="slide-box">
+						<figure class="slide-figure">
+							<!-- <img class="img-slide" src="./Assets/img/depoimento2.png" alt=""> -->
+							<img src="./Assets/img/Eliane.jpg" alt="" class="img-slide img-eliane">
+						</figure>
+						<span class="box-depoiment">
+							<p class="depoiment-text">I heard about Quickcash from a friend of mine who used to transfer money through it, then I decided to give it a try. Until now, I do not use any other money transfer company anymore because of the agencies which are very easy to access</p>
+							<h3 class="depoiment-title"> ELIANE</h3>
+						</span>
+					</div>
+					<div for="slide" class="slide-box">
+						<figure class="slide-figure">
+							<!-- <img class="img-slide" src="./Assets/img/depoimento3.png" alt=""> -->
+							<img src="./Assets/img/Emmanuel testimony.jpg" alt="" class="img-slide">
+						</figure>
+						<span class="box-depoiment">
+							<p class="depoiment-text">As I arrived Côte D’Ivoire, I had to face an issue. I had lost my luggage with all my credit cards and stuff. With QuickCash network, I was able to receive money from France and, fortunately, a few days later someone contacted me to give back my luggage undamaged</p>
+							<h3 class="depoiment-title">EMMANUEL</h3>
+						</span>
+					</div>
+					<figure class="seta-desktop"><img src="./Assets/img/noun_Arrow_2427329.svg" onclick="plusDivs(-1)">
 					</figure>
-					<span class="box-depoiment">
-						<p class="depoiment-text">I heard about Quickcash from a friend of mine who used to transfer money through it, then I decided to give it a try. Until now, I do not use any other money transfer company anymore because of the agencies which are very easy to access</p>
-						<h3> ELIANE</h3>
-					</span>
+					<div class="seta-mobile">
+						<figure><img src="./Assets/img/noun_Arrow_2427329 (1).svg" onclick="plusDivs(1)"></figure>
+						<figure><img src="./Assets/img/noun_Arrow_2427329.svg" onclick="plusDivs(-1)"></figure>
+					</div>
+					<div class="circle-slide1"></div>
 				</div>
-				<div for="slide" class="slide-box">
-					<figure class="slide-figure">
-						<!-- <img class="img-slide" src="./Assets/img/depoimento3.png" alt=""> -->
-						<img src="./Assets/img/Emmanuel testimony.jpg" alt="" class="img-slide">
-					</figure>
-					<span class="box-depoiment">
-						<p class="depoiment-text">As I arrived Côte D’Ivoire, I had to face an issue. I had lost my luggage with all my credit cards and stuff. With QuickCash network, I was able to receive money from France and, fortunately, a few days later someone contacted me to give back my luggage undamaged</p>
-						<h3>EMMANUEL</h3>
-					</span>
 				</div>
-				<figure class="seta-desktop"><img src="./Assets/img/noun_Arrow_2427329.svg" onclick="plusDivs(-1)">
-				</figure>
-				<div class="seta-mobile">
-					<figure><img src="./Assets/img/noun_Arrow_2427329 (1).svg" onclick="plusDivs(1)"></figure>
-					<figure><img src="./Assets/img/noun_Arrow_2427329.svg" onclick="plusDivs(-1)"></figure>
+				<div class="box-writing">
+					<p class="writing">
+						Writing a new page in the history of money transfer along with you!
+					</p>
+					<div class="circle-slide2"></div>
 				</div>
-				<div class="circle-slide1"></div>
-			</div>
-		</div>
-		<div class="box-writing">
-			<p class="writing">
-				Writing a new page in the history of money transfer along with you!
-			</p>
-			<div class="circle-slide2"></div>
-		</div>
-	</section>
-	<div class="circles">
-	</div>
-	</div>
 	</section>
 	<section id="container-agency">
 		<div class="wrapper-agency">
@@ -249,24 +248,24 @@
 				<label class="label-agency" for="country">Country</label>
 				<select id="country" name="country" placeholder="country">
 					<option value="country">Country</option>
-					<option value="France">France</option>
-					<option value="Italy">Italy</option>
-					<option value="Japan">Japan</option>
-					<option value="Mexico">Mexico</option>
-					<option value="Portugal">Portugal</option>
-					<option value="Spain">Spain</option>
-					<option value="United States">United States</option>
-					<option value="Brazil">Brazil</option>
+					<option value="France">COTE D'IVOIRE</option>
 				</select>
 				<label class="label-agency" for="state">State</label>
 				<select name="state" id="state" placeholder="State">
 					<option value="state">State</option>
-					<option value="state">State</option>
+					<option value="state">Comoé District</option>
 					<option value="state">State</option>
 				</select>
 	
 				<label class="label-agency" for="city">City</label>
 				<select name="city" id="city" placeholder="City">
+					<option value="city">City</option>
+					<option value="city">Abengourou</option>
+					<option value="city">Abidjan Abobo Doume</option>
+					<option value="city">City</option>
+					<option value="city">City</option>
+					<option value="city">City</option>
+					<option value="city">City</option>
 					<option value="city">City</option>
 					<option value="city">City</option>
 					<option value="city">City</option>
@@ -280,8 +279,9 @@
 				<p class="location">Plateau Tour BIAO, 13th Floor - 01 BP 10804 Abidjan 01</p>
 			</div>
 			</div>
-		</section>
-		<section id="social-impact-news">
+	</section>
+	<section id="social-impact-news">
+		<div class="wrapper-impact">
 			<div class="wapper-social">
 				<span class="span-title">	
 					<h2 id="news" class="title-social">Social Impact</h2>
@@ -289,79 +289,84 @@
 				<div class="impact-news">
 					<div class="social-impact">
 						<div class="box-img-social">
-							<figure class="social-figure">
-								<img class="img-impact" src="./Assets/img/forum_mondiale1.jpg" alt="">
-							</figure>
-							<div class="box-txt-social">
-								<h3 class="title-socialimpact" data-translatable>Quickcash au forum mondiale des droits de l’homme au Maroc</h3>
-								<p class="p-socialimpact" data-translatable>Après le Brésil s’est déroulée au Maroc du 27 au 30 Novembre 2014, la deuxième édition du Forum mondial des droits de l’Homme. Ce Forum a rassemblé pendant 4 jours plus de 8.000 participants sur divers thématiques concernant les Droits de l’Homme.</p>
-							</div>
+							<a href="http://quickcashci.com/fr/rse/116-quickcash-au-forum-mondiale-des-droits-de-l-homme-au-maroc.html" class="box-link-social">
+								<figure class="social-figure">
+									<img class="img-impact" src="./Assets/img/forum_mondiale1.jpg" alt="">
+								</figure>
+								<div class="box-txt-social">
+									<h3 class="title-socialimpact">Quickcash au forum mondiale des droits de l’homme au Maroc</h3>
+									<p class="p-socialimpact" >Après le Brésil s’est déroulée au Maroc du 27 au 30 Novembre 2014, la deuxième édition du Forum mondial des droits de l’Homme. Ce Forum a rassemblé pendant 4 jours plus de 8.000 participants sur divers thématiques concernant les Droits de l’Homme.</p>
+								</div>
+							</a>
 						</div>
 						<div class="box-img-social reverse">
-							<figure class="social-figure">
-								<img class="img-impact" src="./Assets/img/Atelier secteur agricole.png" alt="">
-							</figure>
-							<div class="box-txt-social">
-								<h3 class="title-socialimpact" data-translatable>Quickcash participe à un atelier sur le thème : "Le secteur agricole face aux enjeux du changement climatique"</h3>
-								<p class="p-socialimpact" data-translatable>Le 21 Novembre 2014, à l’initiative de la CGECI (Confédération Générale des Entreprises de Côte d’Ivoire) et l’UNEMAF (L’Union des Entreprises Agricoles et Forestières) s’est tenue à la Maison de l’Entreprise, sise au plateau, un atelier d’information et de sensibilisation des acteurs du secteur agricole. Les thèmes abordés étaient relatifs à l’impact des changements climatiques sur l’agriculture et les stratégies d’adaptation et d’atténuation de leurs effets. </p>
-							</div>
+							<a href="http://quickcashci.com/fr/rse/115-quickcash-participe-a-un-atelier-sur-le-theme-le-secteur-agricole-face-aux-enjeux-du-changement-climatique.html" class="box-link-social reverse">
+								<figure class="social-figure">
+									<img class="img-impact" src="./Assets/img/Atelier secteur agricole.png" alt="">
+								</figure>
+								<div class="box-txt-social">
+									<h3 class="title-socialimpact" data-translatable>Quickcash participe à un atelier sur le thème : "Le secteur agricole face aux enjeux du changement climatique"</h3>
+									<p class="p-socialimpact" data-translatable>Le 21 Novembre 2014, à l’initiative de la CGECI (Confédération Générale des Entreprises de Côte d’Ivoire) et l’UNEMAF (L’Union des Entreprises Agricoles et Forestières) s’est tenue à la Maison de l’Entreprise, sise au plateau, un atelier d’information et de sensibilisation des acteurs du secteur agricole. Les thèmes abordés étaient relatifs à l’impact des changements climatiques sur l’agriculture et les stratégies d’adaptation et d’atténuation de leurs effets. </p>
+								</div>
+							</a>
 						</div>
 					<div class="box-img-social">
-						<figure class="social-figure">
-							<img class="img-impact" src="./Assets/img/Forum_RSE_Lille.jpg" alt="">
-						</figure>
-						<div class="box-txt-social">
-							<h3 class="title-socialimpact">QuickCash au forum de Lille sur la RSE</h3>
-							<p class="p-socialimpact">La 8e édition du Forum Internationale de Lille, s’est ouverte du 21 au 24 Octobre 2014 devant un public de plus de 6.000 participants autour de 9 défis majeurs : Les ressources de la science et des technologies, de l’emploi, des inégalités, de l’éducation, de la démographie, la finance, de l’information et des territoires. Les cérémonies d’ouverture et de clôture a vu la participation des précurseurs du social business que sont le Pr YUNUS MUHAMMAD Prix Nobel de la Paix et TONY MELOTO.</p>
-
-					</div>
-				</div>
-			</div>
-			<span class="span-seemore-1">
-				<a class="showmore-1" href="">
-					< Show more>
-				</a>	
-			</span>
-			</div>
-		</div>
-			
-			<div class="container-box-news">
-				<div class="container-news">
-					<div class="boxred-news">
-						<h2 class="title-news">News</h2>
-					</div>
-					<div class="box-news-items">
-						<div class="box-news">
-							<h3 class="subtitle-news">Participation of Patricia Zoundi Yao, CEO of QuickCash in the
-								seventh annual Global Entrepreneurship Summit (GES)</h3>
-							<p class="p-news">The CEO of QuickCash, Mrs. Patricia Zoundi Yao, participated in the
-								seventh annual Global Entrepreneurship Summit (GES), held from the 22nd to the 24th of
-								June 2016, at Stanford University in Silicon Valley, California. This summit gathered
-								entrepreneurs at all stages of business development and featured new commitments to
-								promote entrepreneurship as a driver for economic growth, social inclusion, and secure
-								communities.</p>
-						</div>
-						<div class="box-news">
-							<h3 class="subtitle-news">Quickcash for participation in the campain « ewaste » MTN Ivory
-								Coast</h3>
-							<p class="p-news">Launched October 7, 2015, the campaign "EWASTE" why MTN Ivory Coast and
-								were ERICSON partnership lasted four (4) months and ended on February 7th with a
-								ceremony at the Pullman Hotel Plateau.</p>
-						</div>
-						<div class="box-newsLast">
-							<h3 class="subtitle-news">QuickCash honored at the National Day of Excellence 2014</h3>
-							<p class="p-news">Patricia ZOUNDI Mrs. YAO, CEO of QuickCash received the award of youth
-								entrepreneurship on Friday 1st August at the National Day of Excellence. Held at the
-								presidential palace, the ceremony was graced by the presence of the presidential couple,
-								members of the government, diplomatic and responsible institution.</p>
-						</div>
-						<a class="showmore" href="">
-							< Show more News>
+						<a href="http://quickcashci.com/fr/rse/113-quickcash-au-forum-de-lille-sur-la-rse.html" class="box-link-social">
+							<figure class="social-figure">
+								<img class="img-impact" src="./Assets/img/Forum_RSE_Lille.jpg" alt="">
+							</figure>
+							<div class="box-txt-social">
+								<h3 class="title-socialimpact">QuickCash au forum de Lille sur la RSE</h3>
+								<p class="p-socialimpact">La 8e édition du Forum Internationale de Lille, s’est ouverte du 21 au 24 Octobre 2014 devant un public de plus de 6.000 participants autour de 9 défis majeurs : Les ressources de la science et des technologies, de l’emploi, des inégalités, de l’éducation, de la démographie, la finance, de l’information et des territoires. Les cérémonies d’ouverture et de clôture a vu la participation des précurseurs du social business que sont le Pr YUNUS MUHAMMAD Prix Nobel de la Paix et TONY MELOTO.</p>
+							</div>
 						</a>
 					</div>
 				</div>
+				<span class="span-seemore-1">
+					<a class="showmore-1" href="">
+						< Show more>
+					</a>	
+				</span>
 			</div>
-		</div>
+				</div>
+				<div class="container-box-news">
+					<div class="container-news">
+						<div class="boxred-news">
+							<h2 class="title-news">News</h2>
+						</div>
+						<div class="box-news-items">
+							<div class="box-news open">
+								<h3 class="subtitle-news">Participation of Patricia Zoundi Yao, CEO of QuickCash in the
+									seventh annual Global Entrepreneurship Summit (GES)</h3>
+								<p class="p-news">The CEO of QuickCash, Mrs. Patricia Zoundi Yao, participated in the
+									seventh annual Global Entrepreneurship Summit (GES), held from the 22nd to the 24th of
+									June 2016, at Stanford University in Silicon Valley, California. This summit gathered
+									entrepreneurs at all stages of business development and featured new commitments to
+									promote entrepreneurship as a driver for economic growth, social inclusion, and secure
+									communities.</p>
+							</div>
+							<div class="box-news closed">
+								<h3 class="subtitle-news">Quickcash for participation in the campain « ewaste » MTN Ivory
+									Coast</h3>
+								<p class="p-news">Launched October 7, 2015, the campaign "EWASTE" why MTN Ivory Coast and
+									were ERICSON partnership lasted four (4) months and ended on February 7th with a
+									ceremony at the Pullman Hotel Plateau.</p>
+							</div>
+							<div class="box-newsLast closed">
+								<h3 class="subtitle-news">QuickCash honored at the National Day of Excellence 2014</h3>
+								<p class="p-news">Patricia ZOUNDI Mrs. YAO, CEO of QuickCash received the award of youth
+									entrepreneurship on Friday 1st August at the National Day of Excellence. Held at the
+									presidential palace, the ceremony was graced by the presence of the presidential couple,
+									members of the government, diplomatic and responsible institution.</p>
+							</div>
+							<span class="showmore-news" id="box-news-span">
+								< Show more News >
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
 		</div>
 	</section>
 	<section id="partners">
@@ -400,59 +405,61 @@
 	</section>
 	</main>
 	<footer id="footer">
-		<div class="wrapper-footer">
-			<div id="Contacts" class="box-grand-circle">
-				<div class="grand-circle">
-					<img class="img-grand-circle" src="./Assets/img/detalhe_footer_grande.svg" alt="">
-				</div>
-			</div>
-			<div class="container-footer">
-				<div class="box-footer-center">
-					<div class="box-footer">
-						<div class="text-footer">
-							<figure>
-								<img src="./Assets/img/new logo - QC Branca.svg" class="img-logo-footer" a
-									href="../css/style.css"></a>
-							</figure>
-							<ul class="list-contact">
-								<li class="contact-item">
-									<img src="./Assets/img/baseline-location_on-24px.svg" class="info-footer-img" alt="">
-								<p class="p-info-footer">Star 14, Angre 9e Tranche, Abidjan, Côte D’Ivoire</p>
-								</li>
-								<li class="contact-item">
-									<img src="./Assets/img/baseline-phone-24px (1).svg" class="info-footer-img" alt="">
-								<p class="p-info-footer">Tel : (+225) 22 50 45 72 </p>
-								</li>
-								<li class="contact-item">
-									<img src="./Assets/img/baseline-email-24px.svg" class="info-footer-img" alt="">
-								<p class="p-info-footer">Email : infos@quickcashci.com</p>
-								</li>
-							</ul>
-						</div>
-						<div class="box-copyright-desktop">
-							<p class="copyright">Copyright © 2019 QuickCash - All Rights Reserved </p>
-						</div>
+		<div class="footer-content">
+			<div class="wrapper-footer">
+				<div id="Contacts" class="box-grand-circle">
+					<div class="grand-circle">
+						<img class="img-grand-circle" src="./Assets/img/detalhe_footer_grande.svg" alt="">
 					</div>
 				</div>
-				<nav class="menu-secundario">
-					<ul class="list-menu-secundario">
-						<a href="./Assets/pages/about.html">
-							<li class="item-menu-footer">About us</li>
-						</a>
-						<a href="./Assets/pages/products.html">
-							<li class="item-menu-footer">Our Products</li>
-						</a>
-						<a href="#news" class="menu-footer-news">
-							<li class="item-menu-footer menu-footer-news">News</li>
-						</a>
-						<a href="#Contacts">
-							<li class="item-menu-footer">Contact</li>
-						</a>
-					</ul>
-					<img class="img-circle-whith" src="./Assets/img/detalhe_footer_pequeno.svg" alt="">
-				</nav>
-				<div class="box-copyright-mobile">
-					<p class="copyright">Copyright © 2019 QuickCash - All Rights Reserved </p>
+				<div class="container-footer">
+					<div class="box-footer-center">
+						<div class="box-footer">
+							<div class="text-footer">
+								<figure>
+									<img src="./Assets/img/new logo - QC Branca.svg" class="img-logo-footer" a
+										href="../css/style.css"></a>
+								</figure>
+								<ul class="list-contact">
+									<li class="contact-item">
+										<img src="./Assets/img/baseline-location_on-24px.svg" class="info-footer-img" alt="">
+									<p class="p-info-footer">Star 14, Angre 9e Tranche, Abidjan, Côte D’Ivoire</p>
+									</li>
+									<li class="contact-item">
+										<img src="./Assets/img/baseline-phone-24px (1).svg" class="info-footer-img" alt="">
+									<p class="p-info-footer">Tel : (+225) 22 50 45 72 </p>
+									</li>
+									<li class="contact-item">
+										<img src="./Assets/img/baseline-email-24px.svg" class="info-footer-img" alt="">
+									<p class="p-info-footer">Email : infos@quickcashci.com</p>
+									</li>
+								</ul>
+							</div>
+							<div class="box-copyright-desktop">
+								<p class="copyright">Copyright © 2019 QuickCash - All Rights Reserved </p>
+							</div>
+						</div>
+					</div>
+					<nav class="menu-secundario">
+						<ul class="list-menu-secundario">
+							<a href="./Assets/pages/about.html">
+								<li class="item-menu-footer">About us</li>
+							</a>
+							<a href="./Assets/pages/products.html">
+								<li class="item-menu-footer">Our Products</li>
+							</a>
+							<a href="#news" class="menu-footer-news">
+								<li class="item-menu-footer menu-footer-news">News</li>
+							</a>
+							<a href="#Contacts">
+								<li class="item-menu-footer">Contact</li>
+							</a>
+						</ul>
+						<img class="img-circle-whith" src="./Assets/img/detalhe_footer_pequeno.svg" alt="">
+					</nav>
+					<div class="box-copyright-mobile">
+						<p class="copyright">Copyright © 2019 QuickCash - All Rights Reserved </p>
+					</div>
 				</div>
 			</div>
 		</div>

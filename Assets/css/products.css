@@ -19,28 +19,26 @@ body {
   border: solid yellow 3px;
 }
 
-#header {
-  /* max-width: 1440px; */
-}
-#main {
-  /* max-width: 1440px; */
-}
-
 .OurProducts {
-  min-height: 85vh;
+  min-height: 100vh;
 	display: flex;
-	flex-direction: column;
+	justify-content: center;
   background-color: rgba(0, 131, 202, 1);
   box-shadow: 0 10px 15px 0 rgba(0,0,0,0.19);
 }
+
+.wrapper-product {
+  max-width: 1440px;
+}
+
 .title-products {
-  width: 36%;
+  width: 37%;
   height: 15vh;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   color: #fff;
-  font-size: 2.3rem;
+  font-size: 3rem;
   font-family: "Montserrat", sans-serif;
 }
 @media (max-width: 768px) {
@@ -79,8 +77,41 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between;  
+  overflow: hidden;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
+
+.box-product::before {
+  content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 100%;
+    left: 0;
+    z-index: -1;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+
+.box-product::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 100%;
+  left: 0;
+  z-index: -1;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+}
+
 @media (max-width: 768px) {
   .box-product {
     width: 100%;
@@ -134,23 +165,46 @@ body {
 }
 #OurProducts-Inside-1 {
   display: flex;
-  /* min-height: 100vh; */
+  height: 90vh;
   justify-content: center;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
 }
+
+  @media(max-width: 768px) {
+    #OurProducts-Inside-1 {
+      height: auto;;
+    }
+  }
+
 #OurProducts-Inside-2 {
   display: none;
   justify-content: center;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
 }
 #OurProducts-Inside-3 {
   display: none;
   justify-content: space-around;
   flex-direction: column;
+  align-items: center;
+}
+
+.wrapper-inside {
+  max-width: 1440px;
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  flex-direction: column;
   align-items: flex-end;
 }
+
+  @media(max-width: 768px) {
+    .wrapper-inside {
+      height: auto;
+    }
+  }
+
 #container-products-simulater{
   display: flex;
   align-items: center;
@@ -170,7 +224,7 @@ body {
 }
 .OurProducts-btns{
   width: 4%;
-  height: 6vh;
+  height: 10vh;
   font-size: 2rem;
   border: none;
   background: none;
@@ -179,18 +233,20 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 .container-inside {
+  height: 90vh;
   padding: 0 5rem;
-  /* width: 85%; */
   height: 100vh;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center  */
 }
 .inside-account{
   justify-content: flex-start;
 }
 @media (max-width: 768px) {
   .container-inside {
+    height: auto;
+    padding: 0;
     display: flex;
     flex-direction: column;
   }
@@ -223,11 +279,12 @@ body {
 @media (max-width: 768px) {
   .box-inside-cash-um {
     width: 100%;
+    align-items: center;
   }
 }
 .box-inside-cash-dois {
   width: 35%;
-  height: 67%;
+  height: 75%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -235,6 +292,7 @@ body {
 @media (max-width: 768px) {
   .box-inside-cash-dois {
     width: 100%;
+    align-items: center;
   }
 }
 .inside-cash-dois{
@@ -245,7 +303,7 @@ body {
 }
 .box-inside-cash-tres {
   width: 25%;
-  height: 62%;
+  height: 70%;
   display: flex;
   flex-direction: column;
 }
@@ -266,16 +324,17 @@ body {
 }
 .sub-title-inside {
   width: 60%;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-family: "Montserrat", sans-serif;
 }
 .title-inside-cash3 {
   width: 90%;
+  padding-top: 1.4rem;
 }
 .p-inside {
   width: 75%;
   color: #707070;
-  font-size: 0.8rem;
+  font-size: 1rem;
   opacity: 0.7;
   font-family: "Muli", sans-serif;
 }
@@ -325,10 +384,10 @@ body {
   justify-content: space-around;
 }
 .card-1{
-  height: 70%;
+  height: 50%;
 }
 .card-2{
-  height: 70%;
+  height: 65%;
   justify-content: space-evenly;
 }
 .card-3{
@@ -361,7 +420,7 @@ body {
   flex-direction: column;
 }
 .inside-card-2{
-  height: 80%;
+  height: 70%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -422,7 +481,7 @@ body {
 .box-inside-cash-3 {
   position: relative;
   width: 35%;
-  height: 70%;
+  height: 60%;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;

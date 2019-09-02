@@ -6,8 +6,8 @@
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/products.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,600|Montserrat:500,600,700|Muli:300"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <meta name="keywords" content=""> -->
   <meta http-equiv="content-language" content="en-US, fr" />
@@ -25,13 +25,13 @@
         <img src="../img/baseline-close-24px.svg" alt="" id="fechar-menu" class="fechar-menu" />
         <ul class="menu-list">
           <a href="./about.html" class="menu-item" id="menu-item">
-            <li>About us</li>
+            <li class="menu-item">About us</li>
           </a>
           <a href="./products.html" class="menu-item" id="menu-item1">
-            <li>Our Products</li>
+            <li class="menu-item">Our Products</li>
           </a>
           <a href="#Contacts" class="menu-item" id="menu-item2">
-            <li>Contacts</li>
+            <li class="menu-item">Contacts</li>
           </a>
         </ul>
         <ul class="box-lang">
@@ -51,190 +51,201 @@
   </header>
   <main id="main">
     <section id="OurProducts" class="OurProducts">
-      <h2 class="title-products"> Our products</h2>
-      <div class="container-products">
-        <div class="box-product" id="box-product--Cash">
-          <h2 class="title-cash">Cash to Cash</h2>
-          <img class="img-product" src="../img/cash.png" alt="Cash">
-          <p class="p-cash">Classic money transfer from a persan or physical to another physical persan</p>
-        </div>
-        <span class="products-separator"></span>
-        <div class="box-product border" id="box-product--Card">
-          <h2 class="title-cash">Cash to Card</h1>
-            <img class="img-product" src="../img/card.png" alt="Card">
-            <p class="p-cash">Transfer of money from an individual onto a card</p>
-        </div>
-        <span class="products-separator"></span>
-        <div class="box-product" id="box-product--Account">
-          <h2 class="title-cash">Cash to Account</h1>
-          <img class="img-product" src="../img/account.png" alt="Account">
-          <p class="p-cash">Designed for migrants, it allows to transfer money directly into a bank account original, from the OUICKCASH network.</p>
+      <div class="wrapper-product">
+        <h2 class="title-products"> Our products</h2>
+        <div class="container-products">
+          <div class="box-product" id="box-product--Cash">
+            <h2 class="title-cash">Cash to Cash</h2>
+            <img class="img-product" src="../img/cash.png" alt="Cash">
+            <p class="p-cash">Classic money transfer from a persan or physical to another physical persan</p>
+          </div>
+          <span class="products-separator"></span>
+          <div class="box-product border" id="box-product--Card">
+            <h2 class="title-cash">Cash to Card</h1>
+              <img class="img-product" src="../img/card.png" alt="Card">
+              <p class="p-cash">Transfer of money from an individual onto a card</p>
+          </div>
+          <span class="products-separator"></span>
+          <div class="box-product" id="box-product--Account">
+            <h2 class="title-cash">Cash to Account</h1>
+            <img class="img-product" src="../img/account.png" alt="Account">
+            <p class="p-cash">Designed for migrants, it allows to transfer money directly into a bank account original, from the OUICKCASH network.</p>
+          </div>
         </div>
       </div>
     </section>
+
     <section id="OurProducts-Inside-1">
-      <button id="btn-cash" class="OurProducts-btns">x</button>
-      <div class="container-inside">
-        <div class="box-inside-cash-um">
-          <h2 class="title-inside">Cash to Cash</h2>
-          <h3 class="sub-title-inside">It is the transfer of money from one individual to another.</h3>
-          <p class="p-inside">This is the classic pattern through which money can be transferred from one individual to
-            another in just a few minutes.</p>
-          <p class="p-inside"> Generally, funds are paid in cash to the beneficiary and in the local currency of the
-            receiving country.</p>
-          <p class="p-inside"> If desired, the sender can be notified by SMS when the funds are received by the
-            beneficiary</p>
-          <figure>
-            <img class="img-inside-1" src="../img/04.2019 - QuickCash/Assets/cash_to_cash_grey.svg" alt="Cash to Cash">
-          </figure>
-        </div>
-        <div class="box-inside-cash-dois">
-          <h3 class="sub-title-inside">How to make Cash to Cash transfer?</h3>
-          <div class="inside-cash-dois">
-            <div class="d-inside">
-              <p class="p-step-inside">STEP 1</p>
-              <p class="p-inside"> Find the nearest QuickCash agency to you.</p>
-            </div>
-            <div class="d-inside">
-              <p class="p-step-inside"> STEP 2</p>
-              <p class="p-inside"> Visit the QuickCash agency with a valid identity card.</p>
-            </div>
-            <div class="d-inside">
-              <p class="p-step-inside"> STEP 3</p>
-              <p class="p-inside"> Fill out the Sender Form and then submit it to the person behind the counter along with
-                the money to be transferred and the transfer fees.</p>
-            </div>
-            <div class="d-inside">
-              <p class="p-step-inside"> STEP 4</p>
-              <p class="p-inside"> After entering all information and validating transaction, the operator will issue a
-                receipt on which will appear a control number of 12 digits.</p>
-            </div>
-            <div class="d-inside">
-              <p class="p-step-inside"> STEP 5</p>
-              <p class="p-inside"> Communicate to the beneficiary of the transfer:</p>
-              <p class="p-inside">-The control number of the transfer</p>
-              <p class="p-inside">-The password used on the Sender Form</p>
-              <p class="p-inside">-The amount to be received.</p>
+      <div class="wrapper-inside">
+        <button id="btn-cash" class="OurProducts-btns">x</button>
+        <div class="container-inside">
+          <div class="box-inside-cash-um">
+            <h2 class="title-inside">Cash to Cash</h2>
+            <h3 class="sub-title-inside">It is the transfer of money from one individual to another.</h3>
+            <p class="p-inside">This is the classic pattern through which money can be transferred from one individual to
+              another in just a few minutes.</p>
+            <p class="p-inside"> Generally, funds are paid in cash to the beneficiary and in the local currency of the
+              receiving country.</p>
+            <p class="p-inside"> If desired, the sender can be notified by SMS when the funds are received by the
+              beneficiary</p>
+            <figure>
+              <img class="img-inside-1" src="../img/04.2019 - QuickCash/Assets/cash_to_cash_grey.svg" alt="Cash to Cash">
+            </figure>
+          </div>
+          <div class="box-inside-cash-dois">
+            <h3 class="sub-title-inside">How to make Cash to Cash transfer?</h3>
+            <div class="inside-cash-dois">
+              <div class="d-inside">
+                <p class="p-step-inside">STEP 1</p>
+                <p class="p-inside"> Find the nearest QuickCash agency to you.</p>
+              </div>
+              <div class="d-inside">
+                <p class="p-step-inside"> STEP 2</p>
+                <p class="p-inside"> Visit the QuickCash agency with a valid identity card.</p>
+              </div>
+              <div class="d-inside">
+                <p class="p-step-inside"> STEP 3</p>
+                <p class="p-inside"> Fill out the Sender Form and then submit it to the person behind the counter along with
+                  the money to be transferred and the transfer fees.</p>
+              </div>
+              <div class="d-inside">
+                <p class="p-step-inside"> STEP 4</p>
+                <p class="p-inside"> After entering all information and validating transaction, the operator will issue a
+                  receipt on which will appear a control number of 12 digits.</p>
+              </div>
+              <div class="d-inside">
+                <p class="p-step-inside"> STEP 5</p>
+                <p class="p-inside"> Communicate to the beneficiary of the transfer:</p>
+                <p class="p-inside">-The control number of the transfer</p>
+                <p class="p-inside">-The password used on the Sender Form</p>
+                <p class="p-inside">-The amount to be received.</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="box-inside-cash-tres">
-          <h3 class="sub-title-inside title-inside-cash3">How to receive money from a Cash to Cash transfer?</h3>
-          <div class="inside-cash-tres">
-            <div class="d-inside">
-              <p class="p-step-inside">STEP 1</p>
-              <p class="p-inside"> Ask the sender to communicate:</p>
-              <p class="p-inside">-The control number</p>
-              <p class="p-inside">-The password</p>
-              <p class="p-inside">-The amount to be collected</p>
-            </div>
-            <div class="d-inside">
-              <p class="p-step-inside">STEP 2</p>
-              <p class="p-inside"> Go to a QuickCash agency with a valid identity card. Find a QuickCash agent</p>
-            </div>
-            <div class="d-inside">
-              <p class="p-step-inside">STEP 3</p>
-              <p class="p-inside"> Fill out the Receiver Form, and then give it to the person behind the counter. After
-                verifying the transfer information and validation, the agent will give you the money in local currency.
-              </p>
+          <div class="box-inside-cash-tres">
+            <h3 class="sub-title-inside title-inside-cash3">How to receive money from a Cash to Cash transfer?</h3>
+            <div class="inside-cash-tres">
+              <div class="d-inside">
+                <p class="p-step-inside">STEP 1</p>
+                <p class="p-inside"> Ask the sender to communicate:</p>
+                <p class="p-inside">-The control number</p>
+                <p class="p-inside">-The password</p>
+                <p class="p-inside">-The amount to be collected</p>
+              </div>
+              <div class="d-inside">
+                <p class="p-step-inside">STEP 2</p>
+                <p class="p-inside"> Go to a QuickCash agency with a valid identity card. Find a QuickCash agent</p>
+              </div>
+              <div class="d-inside">
+                <p class="p-step-inside">STEP 3</p>
+                <p class="p-inside"> Fill out the Receiver Form, and then give it to the person behind the counter. After
+                  verifying the transfer information and validation, the agent will give you the money in local currency.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <section id="OurProducts-Inside-2">
-      <button id="btn-card" class="OurProducts-btns">x</button>
-      <div class="container-inside">
-        <div class="box-inside-card card-1">
-          <h2 class="title-inside-2">Cash to Card</h2>
-          <h3 class="sub-title-inside-2">It is the transfer of money from an individual onto a card.</h3>
-          <span class="inside-card-1">
-            <p class="p-inside-2">Want more freedom? The Cash to Card may surely be suitable for you. In 2013, QuickCash
-              is launching its Cash to Card.</p>
-            <p class="p-inside-2">It allows you to transfer money to a card. The cardholder can then make the withdrawal
-              in all ATMs of banks affiliated with the GIM-UEMOA network. Operations can be carried out 7/7 and 24/24h.
-            </p>
-            <img class="img-inside-2" src="../img/04.2019 - QuickCash/Assets/cash_to_card_grey.svg" alt="Cash to Cash" />
-            <p class="p-inside-2"> The card also allows you to make purchases and it functions like a bank account. The
-              amount transferred can be fully or partly withdrawn as needed until exhausted. It is ideal for travelers,
-              students and the unbanked.</p>
-          </span>
-        </div>
-        <div class="box-inside-card card-2">
-          <h3 class="sub-title-inside-2">How to proceed with Cash to Card transfer?</h3>
-          <span class="inside-card-2">
-            <p class="p-step-inside-2">STEP 1</p>
-            <p class="p-inside-2"> Find the nearest QuickCash agency to you.</p>
-            <p class="p-step-inside-2"> STEP 2</p>
-            <p class="p-inside-2"> Visit the QuickCash agency with a valid identity card.</p>
-            <p class="p-step-inside-2"> STEP 3</p>
-            <p class="p-inside-2"> Fill out the Form (communicate the card number and cardholder’s identity) and then
-              submit
-              it to the person behind the counter along with the money to be transferred and the transfer fees.</p>
-            <p class="p-step-inside-2"> STEP 4</p>
-            <p class="p-inside-2"> After entering all information and validating transaction, the money is directly
-              credited
-              on the card. There is neither a transfer number nor a password to be communicated. However, the operator
-              will
-              issue a receipt containing a transfer number. Keep it safe for any claim.</p>
-          </span>
-        </div>
-        <div class="box-inside-card card-3">
-          <h3 class="sub-title-inside-2 card-inside-3">How to withdraw money from a Cash to Card transfer?</h3>
-          <span class="inside-card-3">
-            <p class="p-step-inside-2 p-card-3">STEP 1</p>
-            <p class="p-inside-2"> Go to any of GIM-UEMOA ATM (Automatic Teller Machine) with your card.</p>
-            <p class="p-step-inside-2 p-card-3"> STEP 2</p>
-            <p class="p-inside-2"> Insert your card into the slot provided for this purposes and follow the instructions.
-              At
-              the end of the operation, remove your card and keep it for future operations.</p>
-          </span>
+      <div class="wrapper-inside">
+        <button id="btn-card" class="OurProducts-btns">x</button>
+        <div class="container-inside">
+          <div class="box-inside-card card-1">
+            <h2 class="title-inside-2">Cash to Card</h2>
+            <h3 class="sub-title-inside-2">It is the transfer of money from an individual onto a card.</h3>
+            <span class="inside-card-1">
+              <p class="p-inside-2">Want more freedom? The Cash to Card may surely be suitable for you. In 2013, QuickCash
+                is launching its Cash to Card.</p>
+              <p class="p-inside-2">It allows you to transfer money to a card. The cardholder can then make the withdrawal
+                in all ATMs of banks affiliated with the GIM-UEMOA network. Operations can be carried out 7/7 and 24/24h.
+              </p>
+              <img class="img-inside-2" src="../img/04.2019 - QuickCash/Assets/cash_to_card_grey.svg" alt="Cash to Cash" />
+              <p class="p-inside-2"> The card also allows you to make purchases and it functions like a bank account. The
+                amount transferred can be fully or partly withdrawn as needed until exhausted. It is ideal for travelers,
+                students and the unbanked.</p>
+            </span>
+          </div>
+          <div class="box-inside-card card-2">
+            <h3 class="sub-title-inside-2">How to proceed with Cash to Card transfer?</h3>
+            <span class="inside-card-2">
+              <p class="p-step-inside-2">STEP 1</p>
+              <p class="p-inside-2"> Find the nearest QuickCash agency to you.</p>
+              <p class="p-step-inside-2"> STEP 2</p>
+              <p class="p-inside-2"> Visit the QuickCash agency with a valid identity card.</p>
+              <p class="p-step-inside-2"> STEP 3</p>
+              <p class="p-inside-2"> Fill out the Form (communicate the card number and cardholder’s identity) and then
+                submit
+                it to the person behind the counter along with the money to be transferred and the transfer fees.</p>
+              <p class="p-step-inside-2"> STEP 4</p>
+              <p class="p-inside-2"> After entering all information and validating transaction, the money is directly
+                credited
+                on the card. There is neither a transfer number nor a password to be communicated. However, the operator
+                will
+                issue a receipt containing a transfer number. Keep it safe for any claim.</p>
+            </span>
+          </div>
+          <div class="box-inside-card card-3">
+            <h3 class="sub-title-inside-2 card-inside-3">How to withdraw money from a Cash to Card transfer?</h3>
+            <span class="inside-card-3">
+              <p class="p-step-inside-2 p-card-3">STEP 1</p>
+              <p class="p-inside-2"> Go to any of GIM-UEMOA ATM (Automatic Teller Machine) with your card.</p>
+              <p class="p-step-inside-2 p-card-3"> STEP 2</p>
+              <p class="p-inside-2"> Insert your card into the slot provided for this purposes and follow the instructions.
+                At
+                the end of the operation, remove your card and keep it for future operations.</p>
+            </span>
+          </div>
         </div>
       </div>
     </section>
+
     <section id="OurProducts-Inside-3">
-      <button id="btn-account" class="OurProducts-btns">x</button>
-      <div class="container-inside inside-account">
-        <div class="box-inside-cash-3">
-          <h2 class="title-inside-3">Cash to Account</h2>
-          <h3 class="sub-title-inside-3">The possibility to transfer money from your location into your bank account.</h3>
-          <p class="p-inside-3">The search for a stable financial situation often leads to the migration of people around
-            the world.</p>
-          <p class="p-inside-3"> Repatriation of the savings done through many years of hard work to her or his country of
-            origin is often a headache.</p>
-          <p class="p-inside-3"> Tailored to the needs of migrants, Cash to Account allows you to transfer money directly
-            to your bank account in your country of origin.</p>
-          <img class="img-inside-3" src="../img/04.2019 - QuickCash/Assets/cash_to_account_grey.svg" />
-          <p class="p-inside-3"> And the transferred funds will be credited to the beneficiary’s bank account within a
-            short time framework.</p>
-          <p class="p-inside-3"> It thus permits the migrants to safely and discreetly have savings for their projects in
-            their country of origin.</p>
-        </div>
-        <div class="box-inside-cash-3">
-          <h3 class="sub-title-inside-3">How to carry out a Cash to Account transfer?</h3>
-          <div>
-            <p class="p-step-inside-3">STEP 1</p>
-            <p class="p-inside-3"> Find the nearest QuickCash agency to you.</p>
+      <div class="wrapper-inside">
+        <button id="btn-account" class="OurProducts-btns">x</button>
+        <div class="container-inside inside-account">
+          <div class="box-inside-cash-3">
+            <h2 class="title-inside-3">Cash to Account</h2>
+            <h3 class="sub-title-inside-3">The possibility to transfer money from your location into your bank account.</h3>
+            <p class="p-inside-3">The search for a stable financial situation often leads to the migration of people around
+              the world.</p>
+            <p class="p-inside-3"> Repatriation of the savings done through many years of hard work to her or his country of
+              origin is often a headache.</p>
+            <p class="p-inside-3"> Tailored to the needs of migrants, Cash to Account allows you to transfer money directly
+              to your bank account in your country of origin.</p>
+            <img class="img-inside-3" src="../img/04.2019 - QuickCash/Assets/cash_to_account_grey.svg" />
+            <p class="p-inside-3"> And the transferred funds will be credited to the beneficiary’s bank account within a
+              short time framework.</p>
+            <p class="p-inside-3"> It thus permits the migrants to safely and discreetly have savings for their projects in
+              their country of origin.</p>
           </div>
-          <div>
-            <p class="p-step-inside-3"> STEP 2</p>
-            <p class="p-inside-3"> Visit the QuickCash agency with a valid identity card.</p>
-          </div>
-          <div>
-            <p class="p-step-inside-3"> STEP 3</p>
-            <p class="p-inside-3"> Fill out the Form (communicate the account number and the name of the receiving bank)
-              and then submit it to the person behind the counter along with the money to be transferred and the transfer
-              fees.</p>
-          </div>
-          <div>
-            <p class="p-step-inside-3"> STEP 4</p>
-            <p class="p-inside-3"> After entering all information and validating transaction, the operator will issue a
-              receipt on which will appear a control number of 12 digits. This slip is to be kept carefully for future
-              claim.</p>
-          </div>
-          <div>
-            <p class="p-step-inside-3"> STEP 5</p>
-            <p class="p-inside-3"> The money is credited to your account by your manager in maximum 48 hours.</p>
+          <div class="box-inside-cash-3">
+            <h3 class="sub-title-inside-3">How to carry out a Cash to Account transfer?</h3>
+            <!-- <div> -->
+              <p class="p-step-inside-3">STEP 1</p>
+              <p class="p-inside-3"> Find the nearest QuickCash agency to you.</p>
+            <!-- </div> -->
+            <!-- <div> -->
+              <p class="p-step-inside-3"> STEP 2</p>
+              <p class="p-inside-3"> Visit the QuickCash agency with a valid identity card.</p>
+            <!-- </div> -->
+            <!-- <div> -->
+              <p class="p-step-inside-3"> STEP 3</p>
+              <p class="p-inside-3"> Fill out the Form (communicate the account number and the name of the receiving bank)
+                and then submit it to the person behind the counter along with the money to be transferred and the transfer
+                fees.</p>
+            <!-- </div> -->
+            <!-- <div> -->
+              <p class="p-step-inside-3"> STEP 4</p>
+              <p class="p-inside-3"> After entering all information and validating transaction, the operator will issue a
+                receipt on which will appear a control number of 12 digits. This slip is to be kept carefully for future
+                claim.</p>
+            <!-- </div> -->
+            <!-- <div> -->
+              <p class="p-step-inside-3"> STEP 5</p>
+              <p class="p-inside-3"> The money is credited to your account by your manager in maximum 48 hours.</p>
+            <!-- </div> -->
           </div>
         </div>
       </div>
@@ -348,67 +359,72 @@
     </div>
   </section> -->
   <footer id="footer">
-    <div class="wrapper-footer">
-      <div id="Contacts" class="box-grand-circle">
-        <div class="grand-circle">
-          <img class="img-grand-circle" src="../img/detalhe_footer_grande.svg" alt="">
-        </div>
-      </div>
-      <div class="container-footer">
-        <div class="box-footer-center">
-          <div class="box-footer">
-            <div class="text-footer">
-              <figure>
-                <img src="../img/new logo - QC Branca.svg" class="img-logo-footer" a
-                  href="../css/style.css"></a>
-              </figure>
-              <ul class="list-contact">
-                <li class="contact-item">
-                  <img src="../img/baseline-location_on-24px.svg" class="info-footer-img" alt="">
-                <p class="p-info-footer">Star 14, Angre 9e Tranche, Abidjan, Côte D’Ivoire</p>
-                </li>
-                <li class="contact-item">
-                  <img src="../img/baseline-phone-24px (1).svg" class="info-footer-img" alt="">
-                <p class="p-info-footer">Tel : (+225) 22 50 45 72</p>
-                </li>
-                <li class="contact-item">
-                  <img src="../img/baseline-email-24px.svg" class="info-footer-img" alt="">
-                <p class="p-info-footer">Email : infos@quickcashci.com</p>
-                </li>
-              </ul>
-            </div>
-            <div class="box-copyright-desktop">
-              <p class="copyright">Copyright © 2019 QuickCash - All Rights Reserved </p>
-            </div>
+    <div class="footer-content">
+      <div class="wrapper-footer">
+        <div id="Contacts" class="box-grand-circle">
+          <div class="grand-circle">
+            <img class="img-grand-circle" src="../img/detalhe_footer_grande.svg" alt="">
           </div>
         </div>
-        <nav class="menu-secundario">
-          <ul class="list-menu-secundario">
-            <a href="../pages/about.html">
-              <li class="item-menu-footer">About us</li>
-            </a>
-            <a href="../pages/products.html">
-              <li class="item-menu-footer">Our Products</li>
-            </a>
-            <a href="#news" class="menu-footer-news">
-              <li class="item-menu-footer menu-footer-news">News</li>
-            </a>
-            <a href="#Contacts">
-              <li class="item-menu-footer">Contact</li>
-            </a>
-          </ul>
-          <img class="img-circle-whith" src="../img/detalhe_footer_pequeno.svg" alt="">
-        </nav>
-        <div class="box-copyright-mobile">
-          <p class="copyright">Copyright © 2019 QuickCash - All Rights Reserved </p>
+        <div class="container-footer">
+          <div class="box-footer-center">
+            <div class="box-footer">
+              <div class="text-footer">
+                <figure>
+                  <img src="../img/new logo - QC Branca.svg" class="img-logo-footer" a
+                    href="../css/style.css"></a>
+                </figure>
+                <ul class="list-contact">
+                  <li class="contact-item">
+                    <img src="../img/baseline-location_on-24px.svg" class="info-footer-img" alt="">
+                  <p class="p-info-footer">Star 14, Angre 9e Tranche, Abidjan, Côte D’Ivoire</p>
+                  </li>
+                  <li class="contact-item">
+                    <img src="../img/baseline-phone-24px (1).svg" class="info-footer-img" alt="">
+                  <p class="p-info-footer">Tel : (+225) 22 50 45 72</p>
+                  </li>
+                  <li class="contact-item">
+                    <img src="../img/baseline-email-24px.svg" class="info-footer-img" alt="">
+                  <p class="p-info-footer">Email : infos@quickcashci.com</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="box-copyright-desktop">
+                <p class="copyright">Copyright © 2019 QuickCash - All Rights Reserved </p>
+              </div>
+            </div>
+          </div>
+          <nav class="menu-secundario">
+            <ul class="list-menu-secundario">
+              <a href="../pages/about.html">
+                <li class="item-menu-footer">About us</li>
+              </a>
+              <a href="../pages/products.html">
+                <li class="item-menu-footer">Our Products</li>
+              </a>
+              <a href="#news" class="menu-footer-news">
+                <li class="item-menu-footer menu-footer-news">News</li>
+              </a>
+              <a href="#Contacts">
+                <li class="item-menu-footer">Contact</li>
+              </a>
+            </ul>
+            <img class="img-circle-whith" src="../img/detalhe_footer_pequeno.svg" alt="">
+          </nav>
+          <div class="box-copyright-mobile">
+            <p class="copyright">Copyright © 2019 QuickCash - All Rights Reserved </p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="footer-author">
-      <p class="author-text">Developed by</p>
-      <img src="../img/VnW-Logo.svg" alt="logo Vai na Web" class="logo-vnw">
-    </div>
+    <a href="https://www.vainaweb.com.br" class="footer-author">
+      <div class="footer-author">
+        <p class="author-text">Developed by</p>
+        <img src="../img/VnW-Logo.svg" alt="logo Vai na Web" class="logo-vnw">
+      </div>
+    </a
   </footer>
+
   <script>
     var fxrates=new Array();
     fxrates["BRL"]=3.7926;

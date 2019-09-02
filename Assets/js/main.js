@@ -7,6 +7,8 @@
 
   var formOpen = document.getElementById("div-form");
   var formClose = document.getElementById("div-form");
+
+  var newsOpen = document.getElementsByClassName("closed");
   
   
   document.getElementById("menu-mobile").addEventListener("click", openMenu);
@@ -16,12 +18,15 @@
   document.getElementById("menu-item2").addEventListener("click", closeMenu);  
   document.getElementById("btnForm").addEventListener("click", openForm);
   document.getElementById("close-form").addEventListener("click", closeForm);
+  document.getElementById("button-cancel").addEventListener("click", closeForm);
+  document.getElementById("box-news-span").addEventListener("click",  openMenu);
   
   // 	Menu
   function openMenu() {
     menuOpen.classList.toggle("--menuOpen");
     menuMobile.classList.toggle("--menuMobile");
     fecharMenu.classList.toggle("--menuClose");
+    newsOpen.classList.toggle("--openNews");
     menuItem.forEach(element => {
       element.classList.add("--openItem");
     });
@@ -33,7 +38,6 @@
   //  Form
   function openForm() {
     formOpen.classList.toggle("--isOpen");
-    console.log('oi chegou')
   }
   function closeForm() {
     formClose.classList.remove("--isOpen");

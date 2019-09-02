@@ -23,11 +23,12 @@ body {
 
 #header {
   width: 100%;
-  /* max-width: 1440px; */
   height: 10vh;
+  display: flex;
+  justify-content: center;
 }
 .block-logo {
-  width: 25%;
+  width: 30%;
   display: flex;;
 }
 @media (max-width: 768px) {
@@ -36,6 +37,7 @@ body {
   }
 }
 #container-logo {
+  max-width: 1440px;
   margin: 0%;
   width: 100%;
   height: 100%;
@@ -211,21 +213,41 @@ body {
   background-image: url(../img/female-farmer-kenya-west.png);
   background-size: cover;
   background-position: center;
-  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 @media (max-width: 768px) {
   .home {
     height: 85vh;
   }
 }
-.wrapper-home {
-  height: 100%;
+
+.home::before {
   background: linear-gradient(
     to bottom,
     rgba(0, 131, 202, 0) 0%,
     rgba(0, 131, 202, -0.55) 60%,
     rgba(0, 131, 202, 1) 100%
   );
+  content: '';
+  display: block;
+  height: 80%;
+  position: absolute;
+  width: 100%;
+}
+
+@media(max-width: 768px) {
+  .home::before {
+    height: 85%;
+  }
+}
+
+.wrapper-home {
+  max-width: 1440px;
+  height: 100%;
+  width: 100%;
 }
 .box-title {
   padding-left: 5rem;
@@ -296,6 +318,7 @@ body {
   border: none;
   border-radius: 100px;
   background-color: red;
+  z-index: 90;
 }
 @media (max-width: 768px) {
   .button-contact {
@@ -447,6 +470,16 @@ body {
     height: auto;
   }
 }
+
+.wrapper-content {
+  max-width: 1440px;
+  width: 100%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .title-ourproducts {
   padding-top: 2rem;
   color: #fff;
@@ -520,7 +553,7 @@ body {
   width: 80%;
   text-align: center;
   color: #fff;
-  font-size: 1.375rem;
+  font-size: 1.15rem;
   font-family: "Muli", sans-serif;
 }
 @media (max-width: 768px) {
@@ -544,6 +577,21 @@ body {
     align-items: center;
   }
 }
+
+.wrapper-simulater {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+  @media(max-width: 768px) {
+    .wrapper-simulater {
+      flex-direction: column-reverse;
+    }
+  }
+
 .title-simulater {
   font-family: "Montserrat", sans-serif;
   font-size: 3rem;
@@ -597,11 +645,12 @@ body {
   transform: rotate(90deg);
   cursor: pointer;
 }
-.wrapper-simulater {
+.box-simulater {
   width: 35%;
   height: 45%;
   border: none;
 }
+
 .label-simulater {
   font-size: 1.2rem;
   font-weight: 600;
@@ -758,7 +807,7 @@ body {
   display: flex;
   align-items: center;
   color: white;
-  font-size: 1.35rem;
+  font-size: 1.15rem;
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
 }
@@ -937,14 +986,28 @@ simulater-fig {
 }
 
 .depoiment-text {
-  font-size: 1.35rem;
+  font-size: 1.15rem;
   line-height: 1.75rem;
+  font-family: "Muli", sans-serif;
 }
+
+  @media(max-width: 768px) {
+    .depoiment-text {
+      font-size: .85rem;
+      line-height: 1.25rem;
+    }
+  }
 
 .depoiment-title {
    font-size: 1.35rem;
-   font-size: 1.75rem;
 }
+
+  @media(max-width: 768px) {
+    .depoiment-title {
+      font-size: .85rem;
+      line-height: 1.25rem;
+    }
+  }
 
 .pai-slide {
   width: 95%;
@@ -966,8 +1029,12 @@ input:checked ~ .slide-box-2 {
   height: 90%;
   object-fit: cover;
   border-radius: 5%;
-
 }
+
+.img-eliane {
+  object-position: 100% 30%;
+}
+
 .box-writing {
   width: 45%;
 }
@@ -985,7 +1052,7 @@ input:checked ~ .slide-box-2 {
   color: #fff;
   font-weight: 900;
   font-style: italic;
-  font-size: 2.62rem;
+  font-size: 2.5rem;
   font-family: "Montserrat", sans-serif;
   border: solid yellow 3px;
 }
@@ -1045,6 +1112,7 @@ input:checked ~ .slide-box-2 {
 }
 
 .wrapper-agency {
+  max-width: 1440px;
   width: 100%;
   height: 100%;
   display: flex;
@@ -1254,6 +1322,7 @@ input:checked ~ .slide-box-2 {
 #social-impact-news {
   width: 100%;
   display: flex;
+  justify-content: center;
 }
 
   @media(max-width: 768px) {
@@ -1261,6 +1330,18 @@ input:checked ~ .slide-box-2 {
       flex-direction: column;
     }
   }
+
+.wrapper-impact {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+}
+
+@media(max-width: 768px) {
+  .wrapper-impact {
+    flex-direction: column;
+  }
+}
 
 .wapper-social{
   width: 71%;
@@ -1371,6 +1452,20 @@ input:checked ~ .slide-box-2 {
   }
 }
 
+.box-link-social {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-decoration: none;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .box-link-social {
+    flex-direction: column;
+  }
+}
+
 .reverse {
   margin: 2rem 0;
   padding: 1rem;s
@@ -1429,7 +1524,7 @@ input:checked ~ .slide-box-2 {
   margin-bottom: 1rem; 
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 @media (max-width: 768px) {
   .title-socialimpact {
@@ -1439,7 +1534,7 @@ input:checked ~ .slide-box-2 {
 
 .p-socialimpact {
   text-align: left;
-  font-size: 1.125rem;
+  font-size: 1.15rem;
   font-family: "Muli", sans-serif;
 }
 
@@ -1460,6 +1555,19 @@ input:checked ~ .slide-box-2 {
   justify-content: center;
   font-size: 0.85rem;
   color: #459fd9;
+  border: solid yellow 3px;
+}
+
+.showmore-news {
+  height: 10vh;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #459fd9;
+  cursor: pointer;
   border: solid yellow 3px;
 }
 
@@ -1525,10 +1633,18 @@ input:checked ~ .slide-box-2 {
   padding: 1rem;
 }
 
+.closed {
+  display: none;
+}
+
+.closed.--openNews {
+  display: block;
+}
+
 .title-news {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: white;
 }
 
@@ -1548,7 +1664,7 @@ input:checked ~ .slide-box-2 {
 .subtitle-news {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 1.12rem;
+  font-size: 1.15rem;
   width: 100%;
   padding: 1rem 0;
 }
@@ -1590,6 +1706,7 @@ input:checked ~ .slide-box-2 {
 }
 
 .div-part {
+  max-width: 1440px;
   width: 70%;
   display: flex;
   justify-content: space-evenly;
@@ -1651,8 +1768,6 @@ input:checked ~ .slide-box-2 {
 }
 
 #footer {
-  /* max-width: 1440px; */
-  height: 60%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -1663,16 +1778,30 @@ input:checked ~ .slide-box-2 {
 @media (max-width: 768px) {
   #footer {
     flex-direction: column;
-    height: 100%;
+    height: auto;
   }
 }
 
+.footer-content {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .wrapper-footer {
-  height: 100%;
+  height: 60vh;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+@media(max-width: 768px) {
+  .wrapper-footer{
+    height: 93vh;
+  }
 }
 
 .box-grand-circle {
@@ -1723,7 +1852,7 @@ input:checked ~ .slide-box-2 {
 @media (max-width: 768px) {
   .container-footer {
     width: 85%;
-    height: 95%;
+    height: 85vh;
     flex-direction: column;
     justify-content: center;
   }
@@ -1793,8 +1922,10 @@ input:checked ~ .slide-box-2 {
 .logo-footer {
 } */
 .item-menu-footer {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
   color: #fff;
-  font-size: 1.12rem;
+  font-size: 1.125rem;
   /* margin: 10px 0; */
 }
 
@@ -1847,11 +1978,11 @@ input:checked ~ .slide-box-2 {
 } 
 
 .p-info-footer {
+  display: flex;
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 600;
   color: #fff;
-  display: flex;
-  font-size: 1.3rem;
+  font-size: 1.15rem;
 }
 
 @media (max-width: 768px) {
@@ -1889,8 +2020,10 @@ input:checked ~ .slide-box-2 {
 }
 
 .copyright {
-  font-size: 0.95rem;
-  color: black;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #B42317;
   opacity: 0.7;
   border: solid yellow 3px;
 }
@@ -1959,10 +2092,9 @@ input:checked ~ .slide-box-2 {
   width: 6vw;
 }
 
-
 .footer-author {
   width: 100%;
-  height: 15%;
+  height: 7vh;
   background: #FCFCFC;
   display: flex;
   justify-content: center;
@@ -1971,12 +2103,13 @@ input:checked ~ .slide-box-2 {
 
 @media(max-width: 768px) {
   .footer-author {
-    height: 10%;
+    
   }
 }
 
 .author-text {
   font-family: "Montserrat", sans-serif;
+  font-weight: 500;
   color: #000;
 }
 
