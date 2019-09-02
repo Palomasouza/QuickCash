@@ -8,7 +8,7 @@
   var formOpen = document.getElementById("div-form");
   var formClose = document.getElementById("div-form");
 
-  var newsOpen = document.getElementsByClassName("closed");
+  var newsOpen = document.getElementById("closed");
   
   
   document.getElementById("menu-mobile").addEventListener("click", openMenu);
@@ -25,12 +25,13 @@
   function openMenu() {
     menuOpen.classList.toggle("--menuOpen");
     menuMobile.classList.toggle("--menuMobile");
-    fecharMenu.classList.toggle("--menuClose");
+    fecharMenu.classList.toggle("--menuClose");;
     newsOpen.classList.toggle("--openNews");
     menuItem.forEach(element => {
       element.classList.add("--openItem");
     });
   }
+
   function closeMenu() {
     menuOpen.classList.remove("--isOpen");
   }
