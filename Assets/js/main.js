@@ -7,7 +7,7 @@
 
   var formOpen = document.getElementById("div-form");
   var formClose = document.getElementById("div-form");
-
+  
   var newsOpen = document.getElementById("closed");
   
   
@@ -19,14 +19,13 @@
   document.getElementById("btnForm").addEventListener("click", openForm);
   document.getElementById("close-form").addEventListener("click", closeForm);
   document.getElementById("button-cancel").addEventListener("click", closeForm);
-  document.getElementById("box-news-span").addEventListener("click",  openMenu);
+  document.getElementById("box-news-span").addEventListener("click",  openNews);
   
   // 	Menu
   function openMenu() {
     menuOpen.classList.toggle("--menuOpen");
     menuMobile.classList.toggle("--menuMobile");
     fecharMenu.classList.toggle("--menuClose");;
-    newsOpen.classList.toggle("--openNews");
     menuItem.forEach(element => {
       element.classList.add("--openItem");
     });
@@ -42,6 +41,10 @@
   }
   function closeForm() {
     formClose.classList.remove("--isOpen");
+  }
+
+  function openNews() {
+    newsOpen.classList.toggle("--openBoxNews");
   }
 
 })();

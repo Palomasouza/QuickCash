@@ -32,6 +32,14 @@
 					<a href="#Contacts" class="menu-item" id="menu-item2">
 						<li>Contacts</li>
 					</a>
+					<ul class="menu-lang-mobile">
+						<a class="item-lang" href="./frances.html">
+								<li class="frances-en">EN</li>
+							</a>
+						<a class="item-lang" href="./frances.html">
+							<li class="frances-fr"> /FR</li>
+						</a>
+					</ul>
 				</ul>
 				<ul class="box-lang">
 					<a class="item-lang" href="../../index.html">
@@ -58,7 +66,7 @@
 					<form class="container-form">
 						<div class="title-form">
 							<h2 class="contact-form">Contact us </h2>
-							<button id="close-form">-</button>
+							<button id="close-form" value="reset"type="reset">-</button>
 						</div>
 						<div class="div-box-form">
 					    	<div class="box-form-contact">
@@ -77,8 +85,8 @@
 								</div>
 					    </div>
 					    <div class="div-button-cancel-send">
-								<button class="button-cancel">Cancel</button>
-							<button class="button-send">Send</button>
+								<button class="button-cancel" id="button-cancel" value="reset"type="reset" ">Cancel</button>
+							<button class="button-send" type="submit">Send</button>
 					  </div>
 				  </form>
 				</div>
@@ -122,7 +130,7 @@
 			<div class="wrapper-simulater">
 				<form action="" class="container-simulater">
 					<div class="container-select">
-						<fieldset class="wrapper-simulater">
+						<fieldset class="box-simulater">
 							<label class="label-simulater">From:</label>
 								<select class="select-simulater" id="fxexchangerateFrom" onchange="getfxexchangerate(); return false;">
 									<option value="BRL">Ivory Coast</option>
@@ -134,7 +142,7 @@
 								</select>
 						</fieldset>
 						<span class="simulater-inverse" onclick="inversefxexchangerate()">&#8645;</span>
-						<fieldset class="wrapper-simulater">
+						<fieldset class="box-simulater">
 							<label class="label-simulater">To:</label>
 								<select class="select-simulater" id="fxexchangerateTo" onchange="getfxexchangerate(); return false;">
 									<option value="ivony" selected="selected">Ivory Coast</option>
@@ -287,38 +295,44 @@
 					<div class="impact-news">
 						<div class="social-impact">
 							<div class="box-img-social">
+								<a href="http://quickcashci.com/fr/rse/116-quickcash-au-forum-mondiale-des-droits-de-l-homme-au-maroc.html" class="box-link-social">
+									<figure class="social-figure">
+										<img class="img-impact" src="../img/forum-mondiale.png" alt="">
+									</figure>
+									<div class="box-txt-social">
+										<h3 class="title-socialimpact" data-translatable>Quickcash au forum mondial des droits de l’homme au maroc</h3>
+										<p class="p-socialimpact" data-translatable>Après le Brésil s’est déroulée au Maroc du 27 au 30 Novembre 2014, la deuxième édition du Forum mondial des droits de l’Homme. Ce Forum a rassemblé pendant 4 jours plus de 8.000 participants sur divers thématiques concernant les Droits de l’Homme</p>
+									</div>
+								</a>
+							</div>
+							<div class="box-img-social reverse">
+								<a href="http://quickcashci.com/fr/rse/115-quickcash-participe-a-un-atelier-sur-le-theme-le-secteur-agricole-face-aux-enjeux-du-changement-climatique.html" class="box-link-social reverse">
+									<figure class="social-figure">
+										<img class="img-impact" src="../img/atelier-secteur-agricole.png" alt="">
+									</figure>
+									<div class="box-txt-social">
+										<h3 class="title-socialimpact" data-translatable>Le secteur agricole face aux enjeux du changement climatique</h3>
+										<p class="p-socialimpact" data-translatable>Le 21 Novembre 2014, à l’initiative de la CGECI (Confédération Générale des Entreprises de Côte d’Ivoire) et l’UNEMAF (L’Union des Entreprises Agricoles et Forestières) s’est tenue à la Maison de l’Entreprise, sise au plateau, un atelier d’information et de sensibilisation des acteurs du secteur agricole. Les thèmes abordés étaient relatifs à l’impact des changements climatiques sur l’agriculture et les stratégies d’adaptation et d’atténuation de leurs effets. La présence de QUICKCASH à cet atelier se justifiait par le fait que la majorité de sa clientèle est constituée d’agriculteurs. Nous avons donc tenu à mettre l’information à la disposition de nos clients.</p>
+									</div>
+								</a>
+							</div>
+						<div class="box-img-social">
+							<a href="http://quickcashci.com/fr/rse/113-quickcash-au-forum-de-lille-sur-la-rse.html" class="box-link-social">
 								<figure class="social-figure">
 									<img class="img-impact" src="../img/forum-mondiale.png" alt="">
 								</figure>
 								<div class="box-txt-social">
-									<h3 class="title-socialimpact" data-translatable>Quickcash au forum mondial des droits de l’homme au maroc</h3>
-									<p class="p-socialimpact" data-translatable>Après le Brésil s’est déroulée au Maroc du 27 au 30 Novembre 2014, la deuxième édition du Forum mondial des droits de l’Homme. Ce Forum a rassemblé pendant 4 jours plus de 8.000 participants sur divers thématiques concernant les Droits de l’Homme</p>
+									<h3 class="title-socialimpact">QuickCash au forum de Lille sur la RSE</h3>
+									<p class="p-socialimpact">La 8e édition du Forum Internationale de Lille, s’est ouverte du 21 au 24 Octobre 2014 devant un public de plus de 6.000 participants autour de 9 défis majeurs : Les ressources de la science et des technologies, de l’emploi, des inégalités, de l’éducation, de la démographie, la finance, de l’information et des territoires. Les cérémonies d’ouverture et de clôture a vu la participation des précurseurs du social business que sont le Pr YUNUS MUHAMMAD Prix Nobel de la Paix et TONY MELOTO.
+									</p>
 								</div>
-							</div>
-							<div class="box-img-social reverse">
-								<figure class="social-figure">
-									<img class="img-impact" src="../img/atelier-secteur-agricole.png" alt="">
-								</figure>
-								<div class="box-txt-social">
-									<h3 class="title-socialimpact" data-translatable>Le secteur agricole face aux enjeux du changement climatique</h3>
-									<p class="p-socialimpact" data-translatable>Le 21 Novembre 2014, à l’initiative de la CGECI (Confédération Générale des Entreprises de Côte d’Ivoire) et l’UNEMAF (L’Union des Entreprises Agricoles et Forestières) s’est tenue à la Maison de l’Entreprise, sise au plateau, un atelier d’information et de sensibilisation des acteurs du secteur agricole. Les thèmes abordés étaient relatifs à l’impact des changements climatiques sur l’agriculture et les stratégies d’adaptation et d’atténuation de leurs effets. La présence de QUICKCASH à cet atelier se justifiait par le fait que la majorité de sa clientèle est constituée d’agriculteurs. Nous avons donc tenu à mettre l’information à la disposition de nos clients.</p>
-								</div>
-							</div>
-						<div class="box-img-social">
-							<figure class="social-figure">
-								<img class="img-impact" src="../img/forum-mondiale.png" alt="">
-							</figure>
-							<div class="box-txt-social">
-								<h3 class="title-socialimpact">QuickCash au forum de Lille sur la RSE</h3>
-								<p class="p-socialimpact">La 8e édition du Forum Internationale de Lille, s’est ouverte du 21 au 24 Octobre 2014 devant un public de plus de 6.000 participants autour de 9 défis majeurs : Les ressources de la science et des technologies, de l’emploi, des inégalités, de l’éducation, de la démographie, la finance, de l’information et des territoires. Les cérémonies d’ouverture et de clôture a vu la participation des précurseurs du social business que sont le Pr YUNUS MUHAMMAD Prix Nobel de la Paix et TONY MELOTO.
-								</p>
-							</div>
+							</a>
 						</div>
 					</div>
 				<span class="span-seemore-1">
-					<a class="showmore-1" href="">
-						< Show more>
-					</a>	
+						<a class="showmore-1" href="">
+							< Show more>
+						</a>	
 				</span>
 				</div>
 			</div>
@@ -332,17 +346,22 @@
 							<h3 class="subtitle-news">Participation de Mme Patricia Zoundi Yao, Administrateur Général de QuickCash au Global Entrepreneurship Summit (GES)</h3>
 							<p class="p-news">L’Administrateur Général de QuickCash, Mme Patricia Zoundi Yao, a été sélectionnée pour participer à la 7ème édition du Global Entrepreneurship Summit (GES) qui s’est tenue du 22 au 24 juin 2016, aux Etats Unis précisément sur le campus de Stanford en Silicon Valley l’un des plus grands centres de l’innovation et de l’entreprenariat.</p>
 						</div>
-						<div class="box-news">
-							<h3 class="subtitle-news">Participation de Quickcash à la campagne « ewaste » de MTN Côte d’Ivoire</h3>
-							<p class="p-news">Lancée le 07 octobre 2015, la campagne « EWASTE » pour laquelle MTN Côte d’Ivoire et ERICSON étaient en partenariat, a duré quatre (4) mois et s’est clôturée le 07 Février par une cérémonie au Pullman Hôtel du Plateau.</p>
+						<div class="wrapper-news" id="closed">
+
+							<div class="box-news">
+								<h3 class="subtitle-news">Participation de Quickcash à la campagne « ewaste » de MTN Côte d’Ivoire</h3>
+								<p class="p-news">Lancée le 07 octobre 2015, la campagne « EWASTE » pour laquelle MTN Côte d’Ivoire et ERICSON étaient en partenariat, a duré quatre (4) mois et s’est clôturée le 07 Février par une cérémonie au Pullman Hôtel du Plateau.</p>
+							</div>
+
+							<div class="box-newsLast">
+								<h3 class="subtitle-news">QuickCash honoré à la Journée Nationale de l’Excellence 2014</h3>
+								<p class="p-news">Mme Patricia ZOUNDI épouse YAO, administrateur général de QuickCash a reçu le prix d'excellence de l'entreprenariat jeune le vendredi 1er août dernier à l’occasion de la Journée Nationale de l'Excellence. Tenue au palais de la présidence, la cérémonie a été rehaussée par la présence du couple présidentiel, des membres du gouvernement, de plusieurs diplomatiques et responsables d'institution..</p>
+							</div>
+
 						</div>
-						<div class="box-newsLast">
-							<h3 class="subtitle-news">QuickCash honoré à la Journée Nationale de l’Excellence 2014</h3>
-							<p class="p-news">Mme Patricia ZOUNDI épouse YAO, administrateur général de QuickCash a reçu le prix d'excellence de l'entreprenariat jeune le vendredi 1er août dernier à l’occasion de la Journée Nationale de l'Excellence. Tenue au palais de la présidence, la cérémonie a été rehaussée par la présence du couple présidentiel, des membres du gouvernement, de plusieurs diplomatiques et responsables d'institution..</p>
-						</div>
-						<a class="showmore" href="">
+						<span class="showmore-news" id="box-news-span">
 							< Show more News>
-						</a>
+						</span>
 					</div>
 				</div>
 			</div>
@@ -351,13 +370,19 @@
 		<section id="partners">
 			<div class="div-part">
 				<div class="box-part">
-					<h2 class="title-partners">Banking Partners</h2>
+					<h2 class="title-partners">Strategic partner </h2>
 					<div class="list-part">
+						<img src="../img/Logo_APG.png" class="logo-apg" alt="">
 						<img src="../img/logo_ASUSU_SA.png" class="img-part" alt="">
-						<img src="../img/Logo_BPEC_(banque populaire).jpg" class="img-part" alt="">
+						<img src="../img/Logo_BPEC_(banque populaire).jpg" class="logo-bpec" alt="">
 						<img src="../img/Logo_Bank_of_africa_logo.png" class="img-part" alt="">
+						<img src="../img/Logo_KATARI_SARL.jpeg" class="img-part" alt="">
 						<img src="../img/Logo_Sonapost_Burkina_Faso.png" class="img-part" alt="">
+						<img src="../img/Logo_shakaexpress.png" class="img-part" alt="">
 						<img src="../img/Logo_CNCE.jpg" class="img-part" alt="">
+						<img src="../img/logo_TIMBUKTU_XECHANGE.png" class="img-part" alt="">
+						<img src="../img/logo_TRANSFAST.png" class="logo-part" alt="">
+						<img src="../img/logo_WORLREMIT.png" class="logo-part" alt="">
 					</div>
 				</div>
 				<div class="box-part">
@@ -369,15 +394,9 @@
 						<img src="../img/Logo_stanford-university.png" class="img-part" alt="">
 						<img src="../img/camec.png" class="img-part" alt="">
 						<img src="../img/chamber-trust.png" class="img-part" alt="">
-
-						<img src="../img/Logo_APG.png" class="img-part" alt="">
-						<img src="../img/Logo_KATARI_SARL.jpeg" class="img-part" alt="">
-						<img src="../img/Logo_shakaexpress.png" class="img-part" alt="">
-						<img src="../img/logo_TIMBUKTU_XECHANGE.png" class="img-part" alt="">
-						<img src="../img/logo_TRANSFAST.png" class="img-part" alt="">
-						<img src="../img/logo_WORLREMIT.png" class="img-part" alt="">
-						<img src="../img/logo_WORLREMIT.svg" class="img-part" alt="">
-
+						<img src="../img/Logo_CGECI.png" class="img-part" alt="">
+						<img src="../img/Logo_Exxonmobil.png" class="img-part" alt="">
+						<img src="../img/Logo_Plan.jpg" class="img-part" alt="">
 					</div>
 				</div>
 			</div>
