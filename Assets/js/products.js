@@ -10,11 +10,13 @@
     let cashToCard = document.getElementById("OurProducts-Inside-2");
     let cashToAccount = document.getElementById("OurProducts-Inside-3");
 
+    let btnCloseCash = document.getElementById('btn-cash');
+    let btnCloseCashMobile = document.getElementById('btn-cash-mobile');
+
     let cashToCashMobile = document.getElementById("content-cash");
     let cashToCardMobile = document.getElementById("content-card");
     let cashToAccountMobile = document.getElementById("content-account");
 
-    let btnCloseCash = document.getElementById('btn-cash');
     let imgSeta = document.getElementById('closed-seta');
     let imgSeta1 = document.getElementById('closed-seta1');
     let imgSeta2 = document.getElementById('closed-seta2');
@@ -39,7 +41,13 @@
 
     btnCloseCash.onclick = function (e) {
       e.preventDefault();
+      cashToCash.style.display = "none";
+      cashToCashMobile.style.display = "none";
+      imgSeta.style.display = "none";
+    }
 
+    btnCloseCashMobile.onclick = function (e) {
+      e.preventDefault();
       cashToCash.style.display = "none";
       cashToCashMobile.style.display = "none";
       imgSeta.style.display = "none";
@@ -52,11 +60,13 @@
     let cashToCash = document.getElementById("OurProducts-Inside-1");
     let cashToAccount = document.getElementById("OurProducts-Inside-3");
 
+    let btnCloseCard = document.getElementById("btn-card");
+    let btnCloseCardMobile = document.getElementById("btn-card-mobile");
+
     let cashToCashMobile = document.getElementById("content-cash");
     let cashToCardMobile = document.getElementById("content-card");
     let cashToAccountMobile = document.getElementById("content-account");
 
-    let btnCloseCard = document.getElementById("btn-card");
     let imgSeta = document.getElementById('closed-seta');
     let imgSeta1 = document.getElementById('closed-seta1');
     let imgSeta2 = document.getElementById('closed-seta2');
@@ -81,7 +91,13 @@
 
     btnCloseCard.onclick = function (e) {
       e.preventDefault();
+      cashToCard.style.display = "none";
+      cashToCardMobile.style.display = "none";
+      imgSeta1.style.display = "none";
+    }
 
+    btnCloseCardMobile.onclick = function (e) {
+      e.preventDefault();
       cashToCard.style.display = "none";
       cashToCardMobile.style.display = "none";
       imgSeta1.style.display = "none";
@@ -92,7 +108,9 @@
     let cashToAccount = document.getElementById("OurProducts-Inside-3");
     let cashToCard = document.getElementById("OurProducts-Inside-2");
     let cashToCash = document.getElementById("OurProducts-Inside-1");
+
     let btnCloseAccount = document.getElementById("btn-account");
+    let btnCloseAccountMobile = document.getElementById("btn-account-mobile");
 
     let cashToCashMobile = document.getElementById("content-cash");
     let cashToCardMobile = document.getElementById("content-card");
@@ -122,7 +140,13 @@
 
     btnCloseAccount.onclick = function (e) {
       e.preventDefault();
+      cashToAccount.style.display = "none";
+      cashToAccountMobile.style.display = "none";
+      imgSeta2.style.display = "none";
+    }
 
+    btnCloseAccountMobile.onclick = function (e) {
+      e.preventDefault();
       cashToAccount.style.display = "none";
       cashToAccountMobile.style.display = "none";
       imgSeta2.style.display = "none";

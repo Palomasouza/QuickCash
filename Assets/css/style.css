@@ -250,7 +250,7 @@ body {
 
 @media(max-width: 768px) {
   .home::before {
-    height: 90%;
+    height: 90vh;
   }
 }
 
@@ -974,9 +974,10 @@ simulater-fig {
   box-shadow: rgba(0, 0, 0, 0.16) -20px 20px 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 425px) {
   .slide-box {
     width: 80%;
+    height: 85vh;;
   }
 }
 
@@ -995,6 +996,12 @@ simulater-fig {
   flex-direction: column;
   justify-content: space-around;
 }
+
+  @media(max-width: 425px) {
+    .box-depoiment {
+      height: 55%;
+    }
+  }
 
 .depoiment-text {
   font-size: 1.15rem;
@@ -1017,6 +1024,7 @@ simulater-fig {
     .depoiment-title {
       font-size: .85rem;
       line-height: 1.25rem;
+      padding: .5rem 0;
     }
   }
 
@@ -1825,7 +1833,7 @@ input:checked ~ .slide-box-2 {
 
 @media(max-width: 768px) {
   .wrapper-footer{
-    height: 93vh;
+    height: 94vh;
   }
 }
 

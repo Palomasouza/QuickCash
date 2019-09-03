@@ -104,6 +104,7 @@ body {
 
 .box-product {
   width: 30%;
+  position: ;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -229,8 +230,14 @@ body {
   transform: rotate(90deg);
   height: 100px;
   position: absolute;
-  /* bottom: -1.5rem; */
+  bottom: -1.5rem;
 }
+
+  @media(max-width: 768px) {
+    .img-seta {
+      display: none;
+    }
+  }
 
 .open {
   display: block;
@@ -256,11 +263,27 @@ body {
 
 @media(max-width: 768px){
   .products-separator{
-    display: flex;
-    height: 1vh;
-    width: 30vw;
+    display: none;
   }
 }
+
+.products-separator-mobile {
+  display: none;
+}
+  @media(max-width: 768px) {
+    .products-separator-mobile {
+      display: flex;
+      width: 80vw;
+      border-bottom: #fff solid 2px;
+    }
+  }
+
+@media(max-width: 768px) {
+  .title-cash {
+    padding-top: 2rem;
+  }
+}
+
 .box-product--Card {
   /* width: 30%; */
   display: flex;
@@ -295,7 +318,7 @@ body {
 }
 #OurProducts-Inside-1 {
   display: flex;
-  height: 90vh;
+  height: auto;
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -323,7 +346,7 @@ body {
 .wrapper-inside {
   max-width: 1440px;
   display: flex;
-  height: 90vh;
+  height: auto;
   justify-content: center;
   flex-direction: column;
   align-items: flex-end;

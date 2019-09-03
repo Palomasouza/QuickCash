@@ -28,6 +28,14 @@
           <a href="#Contacts" class="menu-item" id="menu-item2">
             <li class="menu-item">Contacts</li>
           </a>
+          <ul class="menu-lang-mobile">
+            <a class="item-lang" href="./frances.html">
+                <li class="ingles-en">EN</li>
+              </a>
+            <a class="item-lang" href="./frances.html">
+              <li class="ingles-fr"> /FR</li>
+            </a>
+          </ul>
         </ul>
         <ul class="box-lang">
           <a class="item-lang" href="./frances.html">
@@ -85,7 +93,7 @@
         <div class="box-values-principal">
         <div class="container-values">
           <figure class="seta-mobile">
-            <img src="../img/noun_Arrow_2427329 (1).svg" onclick="plusDivs(1)">
+            <img src="../img/noun_Arrow_2427329 (1).svg" onclick="myFunction(x).plusDivs(1)">
           </figure>
           <div class="container-values-items values-right slide-box">
             <img class="img-values" src="../img/solidarity.svg" alt="Solidarity">
@@ -130,7 +138,7 @@
             </div>
           </div>
           <figure class="seta-mobile">
-            <img src="../img/noun_Arrow_2427329.svg" onclick="plusDivs(-1)">
+            <img src="../img/noun_Arrow_2427329.svg" onclick="myFunction(x).plusDivs(-1)">
           </figure>
         </div>
         </div>
@@ -341,32 +349,30 @@
 		//   x[slideIndex-1].style.display = "flex";
 		// }
 
-
     function myFunction(x) {
       if (x.matches) { 
         
         let slideIndex = 1;
 
         showDivs(slideIndex);
-        function plusDivs(n) {
-          showDivs(slideIndex += n);
+        function plusDivs(number) {
+          showDivs(slideIndex += number);
         }
-        console.log("test plus div", plusDivs)
 
-        function showDivs(n) {
+        function showDivs(number) {
           let i;
           let x = document.getElementsByClassName("slide-box");
-          if (n > x.length) {slideIndex = 1}    
-          if (n < 1) {slideIndex = x.length}
+          if (number > x.length) {slideIndex = 1}    
+          if (number < 1) {slideIndex = x.length}
           for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";  
           }
-          console.log("test", )
+          console.log("test", slideIndex)
           x[slideIndex-1].style.display = "flex";
         }
+
       }else {
-        let x = document.getElementsByClassName("slide-box");
-        x[slideIndex-1].style.display = "flex";
+
       }
     }
 
