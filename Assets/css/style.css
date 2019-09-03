@@ -59,6 +59,12 @@ body {
   }
 }
 
+  @media (max-width: 425px) {
+    .img-logo-1 {
+      padding-left: 1rem;
+    }
+  }
+
 .boxmenu-mobile {
   display: none;
 }
@@ -219,7 +225,7 @@ body {
 
 .home {
   width: 100%;
-  height: 100%;
+  height: 90vh;
   background-image: url(../img/female-farmer-kenya-west.png);
   background-size: cover;
   background-position: center;
@@ -243,7 +249,7 @@ body {
   );
   content: '';
   display: block;
-  height: 82%;
+  height: 90vh;
   position: absolute;
   width: 100%;
 }
@@ -263,10 +269,8 @@ body {
   padding-left: 5rem;
   position: relative;
   min-height: 70vh;
-  background-image: url("../assets/female-farmer-kenya-west.png");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
+
 @media (max-width: 768px) {
   .box-title {
     align-items: flex-end;
@@ -498,7 +502,7 @@ body {
 }
 @media (max-width: 768px) {
   .title-ourproducts {
-    width: 100%;
+    width: 90%;
     display: flex;
     align-items: center;
     font-size: 2rem;
@@ -525,6 +529,7 @@ body {
 }
 @media (max-width: 768px) {
   .container-box-cash {
+    align-items: center;
     flex-direction: column;
   }
 }
@@ -628,7 +633,7 @@ body {
   }
 }
 .container-simulater {
-  width: 40%;
+  width: 35%;
   /*height: 520px; */
   border: 2.5px solid #fff;
   border-radius: 25px;
@@ -638,6 +643,7 @@ body {
 
 @media(max-width: 768px) {
   .container-simulater {
+    max-width: 95%;
     width: auto;
     /* height: 50vh; */
     margin-top: 2rem;
@@ -667,7 +673,7 @@ body {
   font-weight: 600;
 }
 .container-select {
-  height: 20vh;
+  height: 13vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -1013,7 +1019,7 @@ simulater-fig {
 
 .depoiment-text {
   font-size: 1.15rem;
-  line-height: 1.75rem;
+  line-height: 1.5rem;
   font-family: "Muli", sans-serif;
 }
 
@@ -1122,7 +1128,7 @@ input:checked ~ .slide-box-2 {
 }
 #container-agency {
   position: relative;
-  min-height: 65vh;
+  min-height: 70vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -1763,6 +1769,11 @@ input:checked ~ .slide-box-2 {
 .logo-bpec {
   height: 130px;
 }
+  @media(max-width: 769px) {
+    .logo-bpec {
+      height: 110px;
+    }
+  }
 
 .logo-apg {
   width: 130px;
@@ -1781,6 +1792,10 @@ input:checked ~ .slide-box-2 {
       width: 190px;
     }
   }
+
+.logo-inovapay {
+  height: 64px;
+}
 
 .list-part {
   width: 70%;
@@ -1802,7 +1817,6 @@ input:checked ~ .slide-box-2 {
     .list-part {
       flex-wrap: wrap;
       height: 100%;
-      justify-content: space-between;
     }
   }
 

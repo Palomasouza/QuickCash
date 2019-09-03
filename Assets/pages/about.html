@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-	<meta charset="UTF-8">
 	<title>About - QuickCash</title>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="../css/about.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:300,400,500,600,700|Montserrat:300,400,500,600,700|Muli:300,400,600,700&display=swap" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <header id="header">
@@ -138,7 +139,7 @@
             </div>
           </div>
           <figure class="seta-mobile">
-            <img src="../img/noun_Arrow_2427329.svg" onclick="myFunction(x).plusDivs(-1)">
+            <img src="../img/noun_Arrow_2427329.svg" onclick="plusDivs(-1)" id="arrow-slide">
           </figure>
         </div>
         </div>
@@ -325,12 +326,8 @@
     </a>
   </footer>
   <script src="../js/main.js"></script>
-  <script src="../js/dom-i18n.min.js"></script>
   <script>
-    domI18n({
-      languages: ['en', 'fr']
-    });
-
+   
     // let slideIndex = 1;
 
 		// showDivs(slideIndex);
@@ -347,39 +344,35 @@
 		//      x[i].style.display = "none";  
 		//   }
 		//   x[slideIndex-1].style.display = "flex";
-		// }
+    // }
+    
+    let slideIndex = 1;
+    var mediaSize = window.matchMedia("(max-width: 768px)")
 
-    function myFunction(x) {
-      if (x.matches) { 
-        
-        let slideIndex = 1;
+    showDivs(slideIndex); 
 
-        showDivs(slideIndex);
-        function plusDivs(number) {
-          showDivs(slideIndex += number);
-        }
-
-        function showDivs(number) {
-          let i;
-          let x = document.getElementsByClassName("slide-box");
-          if (number > x.length) {slideIndex = 1}    
-          if (number < 1) {slideIndex = x.length}
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-          }
-          console.log("test", slideIndex)
-          x[slideIndex-1].style.display = "flex";
-        }
-
-      }else {
-
+    function plusDivs(number) {
+      showDivs(slideIndex += number);
+    }
+    
+    function showDivs(number) {
+      let i;
+      let x = document.getElementsByClassName("slide-box");
+      if (number > x.length) {slideIndex = 1}    
+      if (number < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
       }
+      x[slideIndex-1].style.display = "flex";
     }
 
-    var x = window.matchMedia("(max-width: 768px)")
-    myFunction(x) 
-    x.addListener(myFunction)
-
+    window.onload = function() {
+      document.body.addEventListener('resize', function() {
+        if (mediaSize.matches) { 
+          showDivs(slideIndex);     
+        }
+      })
+    }
   </script>
   </body>
   </html>

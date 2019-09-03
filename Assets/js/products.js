@@ -34,7 +34,7 @@
       cashToCardMobile.style.display = "none";
       cashToAccountMobile.style.display = "none";
 
-      imgSeta.style.display = "flex";
+      // imgSeta.style.display = "flex";
       imgSeta1.style.display = "none";
       imgSeta2.style.display = "none";
     }
@@ -84,7 +84,7 @@
       cashToCashMobile.style.display = "none";
       cashToAccountMobile.style.display = "none";
 
-      imgSeta1.style.display = "flex";
+      // imgSeta1.style.display = "flex";
       imgSeta.style.display = "none";
       imgSeta2.style.display = "none";
     }
@@ -133,7 +133,7 @@
       cashToCashMobile.style.display = "none";
       cashToCardMobile.style.display = "none";
 
-      imgSeta2.style.display = "flex";
+      // imgSeta2.style.display = "flex";
       imgSeta.style.display = "none";
       imgSeta1.style.display = "none";
     }

@@ -3,12 +3,13 @@
 <head>
   <title>Our Products - QuickCash</title>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/products.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,600|Montserrat:500,600,700|Muli:300"
   rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <meta name="keywords" content=""> -->
   <meta http-equiv="content-language" content="en-US, fr" />
 </head>
@@ -442,113 +443,6 @@
       </div>
     </section>
   </main>
-  <!-- <section id="simulater">      
-    <form action="" class="container-simulater">
-      <div class="container-select">
-        <fieldset class="wrapper-simulater">
-          <label class="label-simulater">From:</label>
-            <select class="select-simulater" id="fxexchangerateFrom" onchange="getfxexchangerate(); return false;">
-              <option value="BRL">Ivory Coast</option>
-              <option value="EUR">Burkina Faso</option>
-              <option value="NGN">Mali</option>
-              <option value="NGN">Niger</option>
-              <option value="USD" selected="selected">Togo</option>
-              <option value="france">France</option>
-            </select>
-        </fieldset>
-        <span class="simulater-inverse" onclick="inversefxexchangerate()">&#8645;</span>
-        <fieldset class="wrapper-simulater">
-          <label class="label-simulater">To:</label>
-            <select class="select-simulater" id="fxexchangerateTo" onchange="getfxexchangerate(); return false;">
-              <option value="ivony" selected="selected">Ivory Coast</option>
-              <option value="BRL">Burkina Faso</option>
-              <option value="EUR">Mali</option>
-              <option value="NGN">Niger</option>
-              <option value="NGN">Togo</option>
-              <option value="USD">France</option>
-            </select>
-        </fieldset>
-      </div>
-      <div class="container-simulater--converter">
-        <fieldset class="simulater-converter">
-          <label class="converter-title">Your send</label>
-          <span class="converter-items">
-            <p class="items-text" id="fxspanfm">EUR</p>
-            <input class="converter-items-input" placeholder="0" value="1" type="text" id="fxexchangerateAmount" onkeyup="getfxexchangerate(); return false;"></input>
-          </span>
-        </fieldset>
-        <fieldset class="simulater-converter">
-          <label class="converter-title">They receive</label>
-          <span class="converter-items">
-            <p class="items-text">FCFA</p>
-            <p class="converter-items-input" id="fxexchangerateResult">1</p>
-          </span>
-        </fieldset>
-        <span class="container-simulater--description">
-          <p class="simulater-description description-rate">Today's rate: €1 = 655.96 FCFA</p>
-          <p class="simulater-description"> €2.00 fee</p>
-        </span>
-      </div>
-    </form>
-    <div class="firstbox-simulater">
-			<div class="box-titulo">
-				<h2 class="title-simulater">Simulate your transfer</h2>
-				<h3 class="subtitle-simulater">QuickCash is currently available in these countries:</h3>
-			</div>
-			<ul class="box-country">
-				<li class="country-name"><img src="../img/Costa-do-marfim.png" class="country-flag" alt="country-flag">
-					Ivory Coast</li>
-				<li class="country-name"><img src="../img/BurkinaFaso.png" class="country-flag" alt="country-flag">Burkina Faso</li>
-				<li class="country-name"><img src="../img/mali.png" class="country-flag" alt="country-flag">Mali</li>
-				<li class="country-name"><img src="../img/Niger.png" class="country-flag" alt="">Niger</li>
-				<li class="country-name">	<img src="../img/Togo.png" class="country-flag" alt="country-flag">Togo</li>
-			</ul>
-	  </div>	
-  </section>
-  <div class="circles"></div>
-  <section id="container-agency">
-    <div class="wrapper-agency">
-      <img class="icon-agency" src="../img/globo.svg" alt="">
-      <span class="span-agency">
-        <h2 class="title-agency">Find an agency near you!</h2>
-      </span>
-  
-      <form class="form-agency">
-        <label class="label-agency" for="country">Country</label>
-        <select id="country" name="country" placeholder="country">
-          <option value="country">Country</option>
-          <option value="France">France</option>
-          <option value="Italy">Italy</option>
-          <option value="Japan">Japan</option>
-          <option value="Mexico">Mexico</option>
-          <option value="Portugal">Portugal</option>
-          <option value="Spain">Spain</option>
-          <option value="United States">United States</option>
-          <option value="Brazil">Brazil</option>
-        </select>
-        <label class="label-agency" for="state">State</label>
-        <select name="state" id="state" placeholder="State">
-          <option value="state">State</option>
-          <option value="state">State</option>
-          <option value="state">State</option>
-        </select>
-  
-        <label class="label-agency" for="city">City</label>
-        <select name="city" id="city" placeholder="City">
-          <option value="city">City</option>
-          <option value="city">City</option>
-          <option value="city">City</option>
-        </select>
-        <div class="button-agency">
-          <a href="">SEARCH</a>
-        </div>
-      </form>
-      <div class="box-iframe">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2809.0734737332987!2d-4.018849485614924!3d5.320302194964438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1ebb8250843ed%3A0x75f3967c3b06f8e8!2sBIAO+Bank!5e0!3m2!1spt-BR!2sbr!4v1566227777975!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0" allowfullscreen class="iframe-map"></iframe>
-        <p class="location">Plateau Tour BIAO, 13th Floor - 01 BP 10804 Abidjan 01</p>
-      </div>
-    </div>
-  </section> -->
   <footer id="footer">
     <div class="footer-content">
       <div class="wrapper-footer">
@@ -563,7 +457,7 @@
               <div class="text-footer">
                 <figure>
                   <img src="../img/new logo - QC Branca.svg" class="img-logo-footer" a
-                    href="../css/style.css"></a>
+                  href="../css/style.css"></a>
                 </figure>
                 <ul class="list-contact">
                   <li class="contact-item">

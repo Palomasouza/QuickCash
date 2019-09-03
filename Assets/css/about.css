@@ -508,6 +508,7 @@ img {
   @media(max-width: 768px) {
     .box-values-principal {
       height: 85%;
+      padding-bottom: 2rem;
     }
   }
 
@@ -556,6 +557,7 @@ img {
 
   @media(max-width: 768px) {
     .values-right {
+      width: 100%;
       justify-content: flex-start;
       /* margin: 20px 0; */
     }

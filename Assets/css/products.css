@@ -240,7 +240,7 @@ body {
   }
 
 .open {
-  display: block;
+  /* display: block; */
 } 
 
 
@@ -250,6 +250,7 @@ body {
 
   @media(max-width:768px) {
     .wrapper-inside-mobile {
+      height: auto;
       display: flex;
       flex-direction: column;
       align-items: flex-end;
@@ -481,7 +482,6 @@ body {
   }
 }
 .inside-cash-tres{
-  height: 65%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -505,6 +505,7 @@ body {
 
   @media(max-width: 768px) {
     .sub-title-inside {
+      width: 90%;
       padding: 2rem 0;
     }
   }
@@ -527,8 +528,14 @@ body {
   opacity: 0.7;
   font-family: "Muli", sans-serif;
 }
+  @media(max-width: 768px) {
+    .p-inside {
+      width: 90%;
+    }
+  }
+
 .p-step-inside {
-  padding: .3rem 0;
+  padding: 1rem 0;
   color: #707070;
   font-weight: bold;
   font-size: 0.8rem;
@@ -570,7 +577,7 @@ body {
   width: 30%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
 
   @media(max-width: 768px) {
@@ -593,7 +600,7 @@ body {
 
 .card-2{
   height: 65%;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
 }
   @media(max-width: 768px) {
     .card-2 {
@@ -676,6 +683,14 @@ body {
   font-size: 1.2rem;
   font-family: "Montserrat", sans-serif;
 }
+
+  @media(max-width: 768px) {
+    .sub-title-inside-2 {
+      width: 90%;
+      padding: 2rem 0;
+    }
+  }
+
 .p-inside-2 {
   width: 82%;
   color: #707070;
@@ -683,11 +698,25 @@ body {
   font-size: 0.8rem;
   font-family: "Muli", sans-serif;
 }
+
+  @media(max-width: 768px) {
+    .p-inside-2 {
+      width: 90%;
+    }
+  }
+
 .p-step-inside-2 {
   color: #707070;
   font-weight: bold;
   font-size: 0.8rem;
 }
+
+  @media(max-width: 768px) {
+    .p-step-inside-2 {
+      padding: 1rem 0;
+    }
+  }
+
 .p-card-3{
   padding: .6rem 0;
 }
@@ -739,6 +768,13 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+  @media(max-width: 768px) {
+    .sub-title-inside-3 {
+      width: 90%;
+      padding: 2rem 0;
+    }
+  }
+
 .p-inside-3 {
   width: 72%;
   opacity: 0.7;
@@ -747,11 +783,24 @@ body {
   font-family: "Muli", sans-serif;
 }
 
+  @media(max-width: 768px) {
+    .p-inside-3 {
+
+    }
+  }
+
 .p-step-inside-3 {
   color: #707070;
   font-weight: bold;
   font-size: 0.8rem;
 }
+
+@media(max-width: 768px) {
+  .p-step-inside-3 {
+    padding: 1rem 0;
+  }
+}
+
 #footer {
   /* max-width: 1440px; */
 }
