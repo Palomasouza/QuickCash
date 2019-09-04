@@ -1227,7 +1227,6 @@ img {
 
 @media (max-width: 768px) {
   .p-info-footer {
-    padding-left: .5rem;
     font-size: 0.9rem;
   }
 }

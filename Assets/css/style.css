@@ -316,6 +316,7 @@ body {
 
 .div-button {
   width: 95%;
+  position: relative;
   display: flex;
   justify-content: flex-end;
   border: none;
@@ -363,30 +364,29 @@ body {
   }
 }
 
-#div-form {
-  display: none;
+.div-form {
+  margin-right: 1rem; 
+  display: flex;
+  justify-content: flex-end;
 }
 
-#div-form.--isOpen {
+
+.container-form {
+  display: none;
+}
+.container-form.--isOpen {
   position: absolute;
-  bottom: 3rem;
-  right: 1rem;
+  bottom: 1rem;
+  /* right: 1rem; */
   width: 325px;
   height: 410px;
   display: flex;
+  flex-direction: column;
   background: white;
   border-radius: 10px;
   z-index: 99;
-  font-family: "Montserrat", sans-serif;
 }
-@media (max-width: 768px) {
-  #div-form.--isOpen {
-    right: 10px;
-  }
-}
-.container-form {
-  width: 100%;
-}
+
 .box-form {
   opacity: 0.5;
   font-size: 0.85rem;
@@ -796,12 +796,12 @@ body {
   height: 50px;
   border-radius: 50%;
   object-fit: cover;
-  
 }
+
   @media(max-width: 425px) {
     .country-flag {
-      width: 40px;
-      height: 40px;
+      width: 50px;
+      height: 50px;
     }
   }
 
@@ -1756,7 +1756,7 @@ input:checked ~ .slide-box-2 {
 }
 
 .img-part {
-  height: 63px;
+  height: 70px;
 }
 
   @media (max-width: 525px) {
@@ -1792,10 +1792,10 @@ input:checked ~ .slide-box-2 {
       width: 190px;
     }
   }
-
+/* 
 .logo-inovapay {
   height: 64px;
-}
+} */
 
 .list-part {
   width: 70%;
@@ -2058,7 +2058,6 @@ input:checked ~ .slide-box-2 {
 
 @media (max-width: 768px) {
   .p-info-footer {
-    padding-left: .5rem;
     font-size: 0.9rem;
   }
 }

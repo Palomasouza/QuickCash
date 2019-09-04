@@ -5,8 +5,8 @@
   var menuMobile = document.querySelector(".menu-mobile");
   var fecharMenu = document.querySelector(".fechar-menu");
 
-  var formOpen = document.getElementById("div-form");
-  var formClose = document.getElementById("div-form");
+  var formOpen = document.getElementById("container-form");
+  var formClose = document.getElementById("container-form");
   
   var newsOpen = document.getElementById("closed");
   

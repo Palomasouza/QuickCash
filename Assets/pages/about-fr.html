@@ -180,7 +180,7 @@
             </div>
             <div class="box-txt-board">
               <p class="p-txt-board" data-translatable>PatriciaZoundi Yao se révèle comme un acteur remarquable de l'entreprenariat Ivoirien. Elle est l'Administrateur Directeur General de QUICKCASH qu'elle a fondé en 2010. Titulaire d'une Maîtrise en Droit des Affaires obtenue à la Faculté de Droit et de Sciences Politiques de l'Université de Ouagadougou, Patricia dispose également d'un diplôme Universitaire en Médiation obtenu à IFOMENE (Institut de Formation à la Médiation et à la Négociation) de l'Université Catholique de Paris. Dotée d'une farouche volonté de contribuer au développement du monde rural, elle a reçu plusieurs awards</p>
-              <p class="p-txt-board-2" data-translatable>Awards: // Awards:</p>
+              <p class="p-txt-board-2" data-translatable>Awards:</p>
 
               <ul class="list-board">
                 <li class="board-item" data-translatable>- Chevalier de l'ordre national et du mérite burkinabé en 2014, Grand prix de la CGECI Academy</li>
@@ -320,66 +320,34 @@
 
   <script src="../js/main.js"></script>
   <script>
-   
-    // function myFunction(x) {
-    //   if (x.matches) { 
-    //     let slideIndex = 1;
 
-    //     showDivs(slideIndex);
-    //     function plusDivs(n) {
-    //       showDivs(slideIndex += n);
-    //     }
+    let slideIndex = 1;
+    var mediaSize = window.matchMedia("(max-width: 768px)")
 
-    //     function showDivs(n) {
-    //       let i;
-    //       let x = document.getElementsByClassName("slide-box");
-    //       if (n > x.length) {slideIndex = 1}    
-    //       if (n < 1) {slideIndex = x.length}
-    //       for (i = 0; i < x.length; i++) {
-    //         x[i].style.display = "none";  
-    //       }
-    //       x[slideIndex-1].style.display = "flex";
-    //     }
-    //   } 
-    // }
+    showDivs(slideIndex); 
 
-    // var x = window.matchMedia("(max-width: 768px)")
-    // myFunction(x) 
-    // x.addListener(myFunction)
-
-    
-    function myFunction(x) {
-      if (x.matches) { 
-        
-        let slideIndex = 1;
-
-        showDivs(slideIndex);
-        function plusDivs(n) {
-          showDivs(slideIndex += n);
-        }
-        console.log("test plus div", plusDivs)
-
-        function showDivs(n) {
-          let i;
-          let x = document.getElementsByClassName("slide-box");
-          if (n > x.length) {slideIndex = 1}    
-          if (n < 1) {slideIndex = x.length}
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-          }
-          console.log("test", )
-          x[slideIndex-1].style.display = "flex";
-        }
-      }else {
-        let x = document.getElementsByClassName("slide-box");
-        x[slideIndex-1].style.display = "flex";
-      }
+    function plusDivs(number) {
+      showDivs(slideIndex += number);
     }
 
-    var x = window.matchMedia("(max-width: 768px)")
-    myFunction(x) 
-    x.addListener(myFunction)
+    function showDivs(number) {
+      let i;
+      let x = document.getElementsByClassName("slide-box");
+      if (number > x.length) {slideIndex = 1}    
+      if (number < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "flex";
+    }
 
+    window.onload = function() {
+      document.body.addEventListener('resize', function() {
+        if (mediaSize.matches) { 
+          showDivs(slideIndex);     
+        }
+      })
+    }
 
   </script>
   </body>
