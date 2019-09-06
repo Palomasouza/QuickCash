@@ -133,26 +133,173 @@
 					<div class="container-select">
 						<fieldset class="box-simulater">
 							<label class="label-simulater">From:</label>
+							<div class="scrollable">
 								<select class="select-simulater" id="fxexchangerateFrom" onchange="getfxexchangerate(); return false;">
-									<option value="BRL">Ivory Coast</option>
-									<option value="EUR">Burkina Faso</option>
-									<option value="NGN">Mali</option>
+									<option value="XOF">Ivory Coast</option>
+									<option value="XOF">Burkina Faso</option>
+									<option value="XOF">Mali</option>
 									<option value="NGN">Niger</option>
-									<option value="USD" selected="selected">Togo</option>
-									<option value="france">France</option>
+									<option value="USD" >Togo</option>
+									
+									<option value="EUR" selected="selected" >Euro</option>
+									<option value="USD">Dollar US</option>
+									<option value="GBP">Livre Sterling</option>
+									<option value="JPY">Yen Japonais</option>
+									<option value="CHF">Franc Suisse</option>
+									<option value="CAD">Dollar Canadien</option>
+									<option value="AUD">Dollar Autralien</option>
+									<option value="CNY">Yuan Chinois</option>
+									<option value="HKD">Dollar HongKongais</option>
+									<option value="RUB">Rouble Russe</option>
+									<option value="MXN">Peso Mexicain</option>
+									<option value="ZAR">Rand SudAfricain</option>
+									<option disabled="disabled">-----------------------------</option>
+									<option value="ALL">Lek Albanais</option>
+									<option value="DZD">Dinar Algérien</option>
+									<option value="ARS">Peso Argentin</option>
+									<option value="AWG">Florin d'Aruba</option>
+									<option value="BSD">Dollar Bahaméen</option>
+									<option value="BHD">Dinar de Bahreïn</option>
+									<option value="BDT">Taka Bangladais</option>
+									<option value="BBD">Dollar de la Barbade</option>
+									<option value="BYR">Rouble Biélorusse</option>
+									<option value="BZD">Dollar de Belize</option>
+									<option value="BMD">Dollar des Bermudes</option>
+									<option value="BTN">Ngultrum Bhoutanais</option>
+									<option value="BOB">Boliviano Bolivien</option>
+									<option value="BWP">Pula Botswanais</option>
+									<option value="BRL">Real Brésilien</option>
+									<option value="BND">Dollar de Brunei</option>
+									<option value="BGN">Lev Bulgare</option>
+									<option value="BIF">Franc du Burundi</option>
+									<option value="KHR">Riel Cambodgien</option>
+									<option value="CVE">Escudo du Cap Vert</option>
+									<option value="KYD">Dollar des Îles Caïman</option>
+									<option value="XOF">Franc CFA (BCEAO)</option>
+									<option value="XAF">Franc CFA (BEAC)</option>
+									<option value="CLP">Peso Chilien</option>
+									<option value="COP">Peso Colombien</option>
+									<option value="KMF">Franc Comorien</option>
+									<option value="CRC">Colón Costaricain</option>
+									<option value="HRK">Kuna Croate</option>
+									<option value="CUP">Peso Cubain</option>
+									<option value="CZK">Couronne Tchèque</option>
+									<option value="DKK">Couronne Danoise</option>
+									<option value="DJF">Franc Djiboutien</option>
+									<option value="DOP">Peso Dominicain</option>
+									<option value="XCD">Dollar des Caraïbes Orientales</option>
+									<option value="EGP">Livre Egyptienne</option>
+									<option value="SVC">Colon Salvadorien</option>
+									<option value="EEK">Couronne Estonienne</option>
+									<option value="ETB">Birr Ethiopien</option>
+									<option value="FKP">Livre des Iles Falklands</option>
+									<option value="FJD">Dollar Fidjien</option>
+									<option value="IDR">Roupie Indonésienne</option>
+									<option value="INR">Roupie Indienne</option>
+									<option value="GMD">Dalasi Gambien</option>
+									<option value="GTQ">Quetzal Guatémaltèque</option>
+									<option value="GNF">Franc Guinéen</option>
+									<option value="GYD">Dollar de Guyana</option>
+									<option value="HTG">Gourde Haïtienne</option>
+									<option value="HNL">Lempira Hondurien</option>
+									<option value="HUF">Forint Hongrois</option>
+									<option value="ISK">Couronne Islandaise</option>
+									<option value="IRR">Rial Iranien</option>
+									<option value="IQD">Dinar Irakien</option>
+									<option value="ILS">Shekel Israelien</option>
+									<option value="JMD">Dollar Jamaïcain</option>
+									<option value="JOD">Dinar Jordanien</option>
+									<option value="KZT">Tenge du Kazakhstan</option>
+									<option value="KES">Shilling Kenyan</option>
+									<option value="KRW">Won Coréen</option>
+									<option value="KWD">Dinar Koweïtien</option>
+									<option value="LAK">Kip Laotien</option>
+									<option value="LVL">Lats Letton</option>
+									<option value="LBP">Livre Libanaise</option>
+									<option value="LSL">Loti Lesothan</option>
+									<option value="LRD">Dollar du Liberia</option>
+									<option value="LYD">Dinar Lybien</option>
+									<option value="LTL">Lita Lituanienne</option>
+									<option value="MOP">Pataca de Macau</option>
+									<option value="MKD">Dinar Macédonien</option>
+									<option value="MWK">Kwacha Malawite</option>
+									<option value="MYR">Ringgit Malaisien</option>
+									<option value="MVR">Roupie des Maldives</option>
+									<option value="MRO">Ouguiya Mauritanien</option>
+									<option value="MUR">Roupie Mauricienne</option>
+									<option value="MDL">Leu Moldave</option>
+									<option value="MNT">Tugrik Mongol</option>
+									<option value="MAD">Dirham Marocain</option>
+									<option value="MMK">Kyat de Myanmar</option>
+									<option value="NAD">Dollar de Namibie</option>
+									<option value="NPR">Roupie Népalaise</option>
+									<option value="ANG">Gulden Antilles Néerlandaises</option>
+									<option value="NZD">Dollar NéoZélandais</option>
+									<option value="NIO">Cordoba Nicaragayen</option>
+									<option value="NGN">Naira Nigérian</option>
+									<option value="KPW">Won NardCoréen</option>
+									<option value="NOK">Couronne Norvégienne</option>
+									<option value="OMR">Riyal d'Oman</option>
+									<option value="XPF">Franc CFP</option>
+									<option value="PKR">Roupie pakistanaise</option>
+									<option value="PAB">Balboa Panaméen</option>
+									<option value="PGK">Kina de PapouasieNlle Guinée</option>
+									<option value="PYG">Guarani du Paragua</option>
+									<option value="PEN">Sol Péruvien</option>
+									<option value="PHP">Peso Philippin</option>
+									<option value="PLN">Zloty Polonais</option>
+									<option value="QAR">Riyal du Qatar</option>
+									<option value="RON">Leu Roumain (Nouveau)</option>
+									<option value="RWF">Franc Rwandais</option>
+									<option value="WST">Tala Samoan</option>
+									<option value="STD">Dobra Santoméen</option>
+									<option value="SAR">Riyal Saoudien</option>
+									<option value="SCR">Roupie Seychelloise</option><option value="SLL">Leone de Sierra Leone</option>
+									<option value="SGD">Dollar de Singapour</option>
+									<option value="SKK">Couronne Slovaque</option>
+									<option value="SBD">Dollar des Îles Salomon</option>
+									<option value="SOS">Shilling de Somalie</option>
+									<option value="LKR">Roupie SriLankaise</option>
+									<option value="SHP">Livre de SaintHélène</option>
+									<option value="SDG">Livre Soudanaise</option>
+									<option value="SZL">Lilangeni Swazilandais</option>
+									<option value="SEK">Couronne Suédoise</option>
+									<option value="SYP">Livre Syrienne</option>
+									<option value="THB">Baht Thaïlandais</option>
+									<option value="TRY">Lire Turque</option>
+									<option value="TWD">Dollar Taïwainais</option>
+									<option value="TZS">Shilling Tanzanien</option>
+									<option value="TOP">Tongan paʻanga</option>
+									<option value="TTD">Dollar de Trinidad et Tobago</option>
+									<option value="TND">Dinar Tunisien</option>
+									<option value="AED">Dirham Émiratsarabes unis</option>
+									<option value="UGX">Shilling Ougandais</option>
+									<option value="UAH">Grivna Ukrainienne</option>
+									<option value="UYU">Peso Uruguayen (Nouveau)</option>
+									<option value="VUV">Vatu des Îles Vanuatu</option>
+									<option value="VND">Dong Vietnamien</option>
+									<option value="YER">Riyal du Yémen</option>
+									<option value="ZMK">Kwacha Zambien</option>
+									<option value="ZWD">Dollar Zimbabwéen</option>
+									<option value="VEF">Bolívar Vénézuélien</option>
+									<option value="UZS">Sum ouzbek</option>
+									<option value="KGS">Kirghizistan Som</option>
+									<option value="GHS">Cedi Ghanéen (Ancien)</option>
 								</select>
+							</div>
 						</fieldset>
-						<span class="simulater-inverse" onclick="inversefxexchangerate()">&#8645;</span>
+						<!-- <span class="simulater-inverse" onclick="inversefxexchangerate()">&#8645;</span> -->
 						<fieldset class="box-simulater">
 							<label class="label-simulater">To:</label>
+							<div class="scrollable">
 								<select class="select-simulater" id="fxexchangerateTo" onchange="getfxexchangerate(); return false;">
-									<option value="ivony" selected="selected">Ivory Coast</option>
-									<option value="BRL">Burkina Faso</option>
-									<option value="EUR">Mali</option>
-									<option value="NGN">Niger</option>
-									<option value="NGN">Togo</option>
-									<option value="USD">France</option>
+									<option value="XOF" selected="selected">Ivory Coast</option>
+									<option value="XOF">Burkina Faso</option>
+									<option value="XOF">Mali</option>
+									<option value="XOF">Niger</option>
+									<option value="XOF">Togo</option>
 								</select>
+							</div>
 						</fieldset>
 					</div>
 					<div class="container-simulater--converter">
@@ -167,7 +314,7 @@
 							<label class="converter-title">They receive</label>
 							<span class="converter-items">
 								<p class="items-text">FCFA</p>
-								<p class="converter-items-input" id="fxexchangerateResult">1</p>
+								<p class="converter-items-input" id="fxexchangerateResult"></p>
 							</span>
 						</fieldset>
 						<span class="container-simulater--description">
@@ -491,10 +638,8 @@
 	//	--------------  //
 
 	var fxrates=new Array();
-fxrates["BRL"]=3.7926;
-fxrates["EUR"]=0.898497;
-fxrates["NGN"]=360;
-fxrates["USD"]=1
+		fxrates["XOF"]=601.505;fxrates["AED"]=3.67325;fxrates["AFN"]=78.3498;fxrates["ALL"]=110.326;fxrates["AMD"]=476.55;fxrates["ANG"]=1.76605;fxrates["AOA"]=365.415;fxrates["ARS"]=55.9506;fxrates["AUD"]=1.46005;fxrates["AWG"]=1.799;fxrates["AZN"]=1.70499;fxrates["BAM"]=1.7741;fxrates["BBD"]=2.0202;fxrates["BDT"]=84.5601;fxrates["BGN"]=1.76985;fxrates["BHD"]=0.37705;fxrates["BIF"]=1860;fxrates["BMD"]=1;fxrates["BND"]=1.35075;fxrates["BOB"]=6.91885;fxrates["BRL"]=4.0593;fxrates["BSD"]=1.00055;fxrates["BTN"]=71.6409;fxrates["BWP"]=10.928;fxrates["BYN"]=2.10645;fxrates["BYR"]=19600;fxrates["BZD"]=2.01685;fxrates["CAD"]=1.31763;fxrates["CDF"]=1665;fxrates["CHF"]=0.987391;fxrates["CLF"]=0.0257595;fxrates["CLP"]=710.68;fxrates["CNH"]=6.8373;fxrates["CNY"]=7.1176;fxrates["COP"]=3372.5;fxrates["CRC"]=579.101;fxrates["CUP"]=26.5;fxrates["CVE"]=99.8785;fxrates["CZK"]=23.386;fxrates["DEM"]=1.71745;fxrates["DJF"]=177.72;fxrates["DKK"]=6.7495;fxrates["DOP"]=51.395;fxrates["DZD"]=120.155;fxrates["ECS"]=25000;fxrates["EGP"]=16.479;fxrates["ERN"]=15.0003;fxrates["ETB"]=29.4499;fxrates["EUR"]=0.904605;fxrates["FJD"]=2.18685;fxrates["FKP"]=0.811175;fxrates["FRF"]=1700.27;fxrates["GBP"]=0.810902;fxrates["GEL"]=2.95494;fxrates["GHS"]=5.47502;fxrates["GIP"]=0.811205;fxrates["GMD"]=50.415;fxrates["GNF"]=9230;fxrates["GTQ"]=7.69185;fxrates["GYD"]=208.77;fxrates["HKD"]=7.84035;fxrates["HNL"]=24.4501;fxrates["HRK"]=6.6987;fxrates["HTG"]=95.363;fxrates["HUF"]=299.295;fxrates["IDR"]=14072.8;fxrates["IEP"]=0.699154;fxrates["ILS"]=3.51741;fxrates["INR"]=71.6125;fxrates["IQD"]=1190;fxrates["IRR"]=42105;fxrates["ISK"]=126.02;fxrates["ITL"]=1700.27;fxrates["JMD"]=137.29;fxrates["JOD"]=0.7076;fxrates["JPY"]=106.64;fxrates["KES"]=103.83;fxrates["KGS"]=69.8495;fxrates["KHR"]=4091;fxrates["KMF"]=444.725;fxrates["KPW"]=900.053;fxrates["KRW"]=1191.78;fxrates["KWD"]=0.303802;fxrates["KYD"]=0.833895;fxrates["KZT"]=388.11;fxrates["LAK"]=8795;fxrates["LBP"]=1507.5;fxrates["LKR"]=180.91;fxrates["LRD"]=207;fxrates["LSL"]=14.8402;fxrates["LTL"]=2.95274;fxrates["LVL"]=0.60489;fxrates["LYD"]=1.41503;fxrates["MAD"]=9.6564;fxrates["MDL"]=17.876;fxrates["MGA"]=3680;fxrates["MKD"]=55.7355;fxrates["MMK"]=1525.85;fxrates["MNT"]=2668.93;fxrates["MOP"]=8.0794;fxrates["MRO"]=357;fxrates["MUR"]=36.1505;fxrates["MVR"]=15.4023;fxrates["MWK"]=726.105;fxrates["MXN"]=19.577;fxrates["MXV"]=3.07975;fxrates["MYR"]=4.1765;fxrates["MZN"]=61.5503;fxrates["NAD"]=14.825;fxrates["NGN"]=362.497;fxrates["NIO"]=33.5599;fxrates["NOK"]=8.96702;fxrates["NPR"]=114.625;fxrates["NZD"]=1.55291;fxrates["OMR"]=0.385025;fxrates["PAB"]=1.0006;fxrates["PEN"]=3.36445;fxrates["PGK"]=3.37502;fxrates["PHP"]=51.8799;fxrates["PKR"]=156.703;fxrates["PLN"]=3.92625;fxrates["PYG"]=6241.15;fxrates["QAR"]=3.64097;fxrates["RON"]=4.2815;fxrates["RSD"]=106.34;fxrates["RUB"]=65.6235;fxrates["RWF"]=921;fxrates["SAR"]=3.7503;fxrates["SBD"]=8.23935;fxrates["SCR"]=13.7425;fxrates["SDG"]=45.1305;fxrates["SEK"]=9.6011;fxrates["SGD"]=1.38003;fxrates["SHP"]=1.3209;fxrates["SIT"]=216.487;fxrates["SLL"]=9300;fxrates["SOS"]=580;fxrates["SRD"]=7.45799;fxrates["STD"]=21560.8;fxrates["SVC"]=8.7553;fxrates["SYP"]=515;fxrates["SZL"]=14.825;fxrates["THB"]=30.6105;fxrates["TJS"]=9.6954;fxrates["TMT"]=3.5;fxrates["TND"]=2.86275;fxrates["TOP"]=2.3165;fxrates["TRY"]=5.7088;fxrates["TTD"]=6.77305;fxrates["TWD"]=31.1805;fxrates["TZS"]=2299.4;fxrates["UAH"]=25.0575;fxrates["UGX"]=3680;fxrates["UYU"]=36.6902;fxrates["UZS"]=9395;fxrates["VEF"]=9.9875;fxrates["VND"]=23211.7;fxrates["VUV"]=117.503;fxrates["WST"]=2.6695;fxrates["XAF"]=595.02;fxrates["XAG"]=0.0532839;fxrates["XAU"]=0.000654934;fxrates["XCD"]=2.70255;fxrates["XCP"]=0.363702;fxrates["XDR"]=0.73005;fxrates["XOF"]=601.505;fxrates["XPD"]=0.001099;fxrates["XPF"]=108.15;fxrates["XPT"]=0.001223;fxrates["YER"]=250.298;fxrates["ZAR"]=14.7471;fxrates["ZMW"]=13.137;fxrates["ZWL"]=322;fxrates["EEK"]=14.153992593;fxrates["SKK"]=22.206;fxrates["ZWD"]=361.9;fxrates["ZMK"]=5189.5;fxrates["USD"]=1;
+	;
 ;
 
 function inversefxexchangerate(){
