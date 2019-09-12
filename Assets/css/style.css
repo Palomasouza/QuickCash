@@ -264,6 +264,7 @@ body {
   max-width: 1440px;
   height: 100%;
   width: 100%;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -675,11 +676,10 @@ body {
   font-weight: 600;
 }
 
-.scrollable{  
+/* .scrollable{  
   overflow-y: scroll;
-  width: 200px;
   border: 1px silver solid;
-}
+} */
 
 .scrollable::-webkit-scrollbar{
   width: 6px;

@@ -322,22 +322,27 @@
   <script>
 
     let slideIndex = 1;
-    var mediaSize = window.matchMedia("(max-width: 768px)")
+    let mediaSize = window.matchMedia("(max-width: 768px)")      
 
     showDivs(slideIndex); 
 
     function plusDivs(number) {
       showDivs(slideIndex += number);
     }
-
+    
     function showDivs(number) {
       let i;
       let x = document.getElementsByClassName("slide-box");
-      if (number > x.length) {slideIndex = 1}    
-      if (number < 1) {slideIndex = x.length}
+      if (number > x.length) {
+        slideIndex = 1
+      }    
+      if (number <  1) {
+        slideIndex = x.length
+      }
       for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";  
       }
+      
       x[slideIndex-1].style.display = "flex";
     }
 
