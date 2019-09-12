@@ -1183,7 +1183,6 @@ input:checked ~ .slide-box-2 {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: space-around;
 }
 
 @media(max-width: 768px) {
@@ -1194,7 +1193,8 @@ input:checked ~ .slide-box-2 {
 }
 
 .span-agency {
-  width: 30%;
+  width: 40%;
+  height: 55vh;
   z-index: 99;
 }
 @media (max-width: 768px) {
@@ -1253,7 +1253,8 @@ input:checked ~ .slide-box-2 {
 }
 .form-agency {
   width: 25%;
-  height: 35vh;
+  height: 25vh;
+  padding: 0 2rem;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -1263,7 +1264,7 @@ input:checked ~ .slide-box-2 {
   .form-agency {
     margin: 1.5rem 0;
     width: 85%;
-    height: 55vh;
+    height: 25vh;
     justify-content: space-between;
   }
 }
@@ -1283,6 +1284,36 @@ input:checked ~ .slide-box-2 {
     width: 100%;
   }
 }
+
+.map-content {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+  @media(max-width: 768px) {
+    .map-content {
+      width: 100%;
+      height: 25vh;
+      align-items: center;
+    }
+  }
+
+.map-content__list {
+  width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media (max-width:768px) {
+  .map-content__list {
+    height: 100%;
+  }
+}
+
 .label-agency {
   font-size: 1.3rem;
   font-family: "Montserrat", sans-serif;

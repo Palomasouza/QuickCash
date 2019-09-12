@@ -393,48 +393,36 @@
 					<div class="circle-slide2"></div>
 				</div>
 	</section>
-	<section id="container-agency">
-		<div class="wrapper-agency">
+	<section id="container-agency" class="map">
+		<div class="wrapper-agency container">
 			<img class="icon-agency" src="./Assets/img/globo.svg" alt="">
 			<span class="span-agency">
 				<h2 class="title-agency">Find an agency near you!</h2>
 			</span>
 	
-			<form class="form-agency">
-				<label class="label-agency" for="country">Country</label>
-				<select id="country" name="country" placeholder="country">
-					<option value="country">Country</option>
-					<option value="France">COTE D'IVOIRE</option>
+			<form class="form-agency map-form">
+
+				<label class="label-agency map-label" for="country">Country</label>
+
+				<select id="country" class="map-select" name="campo" placeholder="country">
+					<option id="-1">select a country</option>
+					<option value="advogados">COTE D'IVOIRE</option>
 				</select>
-				<label class="label-agency" for="state">State</label>
-				<select name="state" id="state" placeholder="State">
-					<option value="state">State</option>
-					<option value="state">Comoé District</option>
-					<option value="state">State</option>
-				</select>
-	
-				<label class="label-agency" for="city">City</label>
+				
+				<label class="label-agency map-label" for="city">City</label>
+
 				<select name="city" id="city" placeholder="City">
-					<option value="city">City</option>
-					<option value="city">Abengourou</option>
-					<option value="city">Abidjan Abobo Doume</option>
-					<option value="city">City</option>
-					<option value="city">City</option>
-					<option value="city">City</option>
-					<option value="city">City</option>
-					<option value="city">City</option>
-					<option value="city">City</option>
-					<option value="city">City</option>
+						<option id="-1">select a city</option>
 				</select>
-				<div class="button-agency">
+
+				<!-- <div class="button-agency">
 					<a href="">SEARCH</a>
-				</div>
+				</div> -->
+
 			</form>
-			<div class="box-iframe">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2809.0734737332987!2d-4.018849485614924!3d5.320302194964438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1ebb8250843ed%3A0x75f3967c3b06f8e8!2sBIAO+Bank!5e0!3m2!1spt-BR!2sbr!4v1566227777975!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0" allowfullscreen class="iframe-map"></iframe>
-				<p class="location">Plateau Tour BIAO, 13th Floor - 01 BP 10804 Abidjan 01</p>
+			<div class="map-content">
 			</div>
-			</div>
+		</div>
 	</section>
 	<section id="social-impact-news">
 		<div class="wrapper-impact">
@@ -698,6 +686,7 @@ function inversefxexchangerate(){
 
 	</script>
 	<script src="./Assets/js/main.js"></script>	
+	<script src="./Assets/js/agency.js"></script>
 </body>
 
 </html>
