@@ -97,5 +97,38 @@ function handleForm () {
     }
   }
 
+  function handleEstadual() {
+    var l = document.querySelector(".map-content"),
+        i = document.querySelector(".map-form").querySelector('select[name="estado"]');
+    ! function() {
+        for (var e = [{ value: "df", display: "Distrito Federal" }, { value: "al", display: "Alagoas" }, { value: "ap", display: "Amapá" }, { value: "ba", display: "Bahia" }, { value: "ma", display: "Maranhão" }, { value: "mg", display: "Minas Gerais" }, { value: "ms", display: "Mato Grosso do Sul" }, { value: "mt", display: "Mato Grosso" }, { value: "pa", display: "Pará" }, { value: "pe", display: "Pernambuco" }, { value: "pi", display: "Piauí" }, { value: "pr", display: "Paraná" }, { value: "ro", display: "Rondônia" }, { value: "rs", display: "Rio Grande do Sul" }, { value: "sc", display: "Santa Catarina" }, { value: "sp", display: "São Paulo" }, { value: "to", display: "Tocantins" }], t = 0; t < e.length; t++) {
+            var a = e[t],
+                n = document.createElement("option");
+            n.value = a.value, n.textContent = a.display, i.appendChild(n)
+        }
+    }(), loadJSON("js/leg_estadual.json", function(e) {
+        var r = JSON.parse(e);
+        i.addEventListener("change", function() {
+            resetContent();
+            var e = r[i.value],
+                t = document.createElement("ul");
+            t.classList.add("map-content__list");
+            for (var a = 0; a < e.length; a++) {
+                var n = e[a],
+                    o = document.createElement("li");
+                o.classList.add("map-content__list__item"), o.innerHTML = n, t.appendChild(o)
+            }
+            l.append(t)
+        })
+    })
+}
+    
+
+  function loadJSON(e, t) {
+    var a = new XMLHttpRequest;
+    a.overrideMimeType("application/json"), a.open("GET", e, !0), a.onreadystatechange = function() { 4 == a.readyState && 200 == a.status && t(a.responseText) }, a.send(null)
+  }
+
+
 function init() { handleForm() }
 init();
