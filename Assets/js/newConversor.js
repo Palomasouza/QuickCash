@@ -33,7 +33,6 @@ const getValues = () => {
     }
   })
   .then(response => {
-    console.log('response: ', response.data)
     currencyFrom.innerHTML = currencys.from,
     currencyTo.innerHTML = currencys.to,
     send.value = currencys.amount;

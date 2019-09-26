@@ -3,6 +3,8 @@
   document.getElementById("box-product--Cash").addEventListener("click", showCashToCash);
   document.getElementById("box-product--Card").addEventListener("click", showCashToCard);
   document.getElementById("box-product--Account").addEventListener("click", showCashToAccount);
+  
+  let arrow = document.getElementById('arrow');
 
   // Products
   function showCashToCash() {
@@ -22,10 +24,11 @@
     let imgSeta2 = document.getElementById('closed-seta2');
 
 
-    let openCash =true;
+    let openCash;
 
-    if (openCash = true) {
-      // openCash = false;
+    if (!openCash) {
+      openCash = true;
+      arrow.style.left = '14%';
       cashToCash.style.display = "flex";
       cashToCard.style.display = "none";
       cashToAccount.style.display = "none";
@@ -76,6 +79,7 @@
     if (!openCard) {
       openCard = true;
 
+      arrow.style.left = '47%';
       cashToCard.style.display = "flex";
       cashToCash.style.display = "none";
       cashToAccount.style.display = "none";
@@ -125,6 +129,7 @@
     if (!openAccount) {
       openAccount = true;
 
+      arrow.style.left = '81%';
       cashToAccount.style.display = "flex";
       cashToCash.style.display = "none";
       cashToCard.style.display = "none";

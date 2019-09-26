@@ -2,7 +2,7 @@ let values;
 
 const setCity = () => {
   let select = document.getElementById('city');
-  let data = '<option value="">select a country</option>';
+  let data = '<option value="">select a city</option>';
 
   agencys.map(item => {
     let option = `<option value="${item.city}">${item.city}</option>`
