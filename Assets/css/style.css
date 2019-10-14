@@ -462,7 +462,7 @@ body {
   align-items: center;
 }
 #container-products {
-  min-height: 90vh;
+  min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -471,10 +471,10 @@ body {
 }
 .wrapper-content {
   max-width: 1440px;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 50vh;
 }
 
 .title-ourproducts {
