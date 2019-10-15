@@ -331,6 +331,8 @@
     let slideIndex = 1;
     let mediaSize = window.matchMedia("(max-width: 768px)")      
 
+    console.log('mediaSize', mediaSize.matches)
+
     showDivs(slideIndex); 
 
     function plusDivs(number) {
@@ -347,7 +349,9 @@
         slideIndex = x.length
       }
       for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
+        if (mediaSize.matches) {
+          x[i].style.display = "none";  
+        }
       }
       
       x[slideIndex-1].style.display = "flex";
