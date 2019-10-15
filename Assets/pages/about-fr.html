@@ -320,43 +320,44 @@
       </div>
     </a>
   </footer>
+<script src="../js/main.js"></script>
+<script>
+  let slideIndex = 1;
+  let mediaSize = window.matchMedia("(max-width: 768px)")
 
-  <script src="../js/main.js"></script>
-  <script>
+  console.log('mediaSize', mediaSize.matches)
 
-    let slideIndex = 1;
-    let mediaSize = window.matchMedia("(max-width: 768px)")      
+  showDivs(slideIndex);
 
-    showDivs(slideIndex); 
+  function plusDivs(number) {
+    showDivs(slideIndex += number);
+  }
 
-    function plusDivs(number) {
-      showDivs(slideIndex += number);
+  function showDivs(number) {
+    let i;
+    let x = document.getElementsByClassName("slide-box");
+    if (number > x.length) {
+      slideIndex = 1
     }
-    
-    function showDivs(number) {
-      let i;
-      let x = document.getElementsByClassName("slide-box");
-      if (number > x.length) {
-        slideIndex = 1
-      }    
-      if (number <  1) {
-        slideIndex = x.length
+    if (number < 1) {
+      slideIndex = x.length
+    }
+    for (i = 0; i < x.length; i++) {
+      if (mediaSize.matches) {
+        x[i].style.display = "none";
       }
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
+    }
+
+    x[slideIndex - 1].style.display = "flex";
+  }
+
+  window.onload = function () {
+    document.body.addEventListener('resize', function () {
+      if (mediaSize.matches) {
+        showDivs(slideIndex);
       }
-      
-      x[slideIndex-1].style.display = "flex";
-    }
-
-    window.onload = function() {
-      document.body.addEventListener('resize', function() {
-        if (mediaSize.matches) { 
-          showDivs(slideIndex);     
-        }
-      })
-    }
-
-  </script>
-  </body>
-  </html>
+    })
+  }
+</script>
+</body>
+</html>
