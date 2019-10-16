@@ -1,5 +1,17 @@
 (function() {
 
+  const cash = document.querySelector("#box-product--Cash").getBoundingClientRect();
+  const card = document.querySelector("#box-product--Card").getBoundingClientRect();
+  const account = document.querySelector("#box-product--Account").getBoundingClientRect();
+  
+  const Inside1 = document.querySelector('#OurProducts-Inside-1');
+  const Inside2 = document.querySelector('#OurProducts-Inside-2');
+  const Inside3 = document.querySelector('#OurProducts-Inside-3');
+
+  Inside1.style.setProperty('--left', (cash.x + (cash.width / 2) - 40) + 'px');
+  Inside2.style.setProperty('--left', (card.x + (card.width / 2) - 40) + 'px');
+  Inside3.style.setProperty('--left', (account.x + (account.width / 2) - 40) + 'px');
+
   document.getElementById("box-product--Cash").addEventListener("click", showCashToCash);
   document.getElementById("box-product--Card").addEventListener("click", showCashToCard);
   document.getElementById("box-product--Account").addEventListener("click", showCashToAccount);
