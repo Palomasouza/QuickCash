@@ -8,7 +8,9 @@
   var formOpen = document.getElementById("container-form");
   var formClose = document.getElementById("container-form");
   
-  var newsOpen = document.getElementById("closed");
+  var newsOpenBox = document.getElementById("closed");
+  var newsOpenBox1 = document.getElementById("closed1");
+  var newsOpenBox2 = document.getElementById("closed2");
   
   
   document.getElementById("menu-mobile").addEventListener("click", openMenu);
@@ -19,7 +21,10 @@
   document.getElementById("btnForm").addEventListener("click", openForm);
   document.getElementById("close-form").addEventListener("click", closeForm);
   document.getElementById("button-cancel").addEventListener("click", closeForm);
+
   document.getElementById("box-news-span").addEventListener("click",  openNews);
+  document.getElementById("box-news-span1").addEventListener("click",  openNews1);
+  document.getElementById("box-news-span2").addEventListener("click",  openNews2);
   
   // 	Menu
   function openMenu() {
@@ -44,7 +49,16 @@
   }
 
   function openNews() {
-    newsOpen.classList.toggle("--openBoxNews");
+    console.log('teste clicou ')
+    newsOpenBox.classList.toggle("--openBoxNews");
+  }
+  function openNews1() { 
+    console.log('teste clicou 1')
+    newsOpenBox1.classList.toggle("--openBoxNews1");
+  }
+  function openNews2() {
+    console.log('teste clicou 2')
+    newsOpenBox2.classList.toggle("--openBoxNews2");
   }
 
 })();
