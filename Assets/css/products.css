@@ -52,9 +52,9 @@ body {
 .container-products {
   width: 100%;
   height: 60vh;
+  margin-top: 4rem;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 @media (max-width: 768px) {
   .container-products {
@@ -154,7 +154,6 @@ body {
 }
 
 .box-product {
-  height: 35vh;
   width: 35%;
   display: flex;
   flex-direction: column;
